@@ -1,10 +1,163 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>Title</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
 </head>
 <body>
+<header class="header">
+  <div class="header-logo">
+    <img src="http://placehold.it/75x22" alt="Логотип" class="logo header-logo__image">
+    <button class="btn-close header-logo__btn" title="Закрыть">
+      <img src="http://placehold.it/23x23" alt="Закрыть">
+    </button>
+  </div>
+  <nav class="main-navigation">
+    <ul class="navigation-list">
+      <li class="main-navigation__item">
+        <a href="index.html" class="main-navigation__item-link">Главная</a>
+      </li>
+      <li class="main-navigation__item">
+        <a href="photo.html" class="main-navigation__item-link">Фотографии</a>
+      </li>
+      <li class="main-navigation__item">
+        <a class="main-navigation__item-link">Конкурс</a>
+      </li>
+      <li class="main-navigation__item">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="main-navigation__item-link">Htmlacademy</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main class="photo-form">
+  <h1 class="page__title">Фотографии пользователей</h1>
+  <form class="form" action="https://echo.htmlacademy.ru" method="post">
+    <p class="slogan form__title">
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+    </p>
+    <fieldset class="form__name">
+      <div class="form__field">
+        <label class="form__field-name" for="second" tabindex="0">Фамилия:</label>
+        <input class="form__field-input" type="text" id="second" name="second-name" placeholder="Укажите фамилию*" aria-label="Фамилия" required></div>
+      <div class="form__field">
+        <label class="form__field-name" for="first" tabindex="0">имя:</label>
+        <input class="form__field-input" type="text" id="first" name="first-name"  placeholder="Введите ваше имя" aria-label="Имя" required></div>
+      <div class="form__field">
+        <label class="form__field-name" for="patronymic" tabindex="0">Отчество:</label>
+        <input class="form__field-input" type="text" id="patronymic" name="patronymic"  placeholder="Ну и отчество тоже" aria-label="Отчество"></div>
+    </fieldset>
+    <fieldset class="form__progress">
+      <legend class="form__field-name form__progress-title">Ваши безбашенные достижения в путешествии</legend>
+      <div class="form__selection">
+        <input class="form__selection-input visually-hidden" type="checkbox" id="selfie" name="selfie" value="selfie" checked>
+        <label class="form__selection-name" for="selfie" tabindex="0">Сделал селфи с акулой</label>
+      </div>
+      <div class="form__selection">
+        <input class="form__selection-input visually-hidden" type="checkbox" id="beach" name="beach" value="beach" checked>
+        <label class="form__selection-name" for="beach" tabindex="0">Обгорел на пляже</label>
+      </div>
+      <div class="form__selection">
+        <input class="form__selection-input visually-hidden" type="checkbox" id="noris" name="noris" value="noris">
+        <label class="form__selection-name" for="noris" tabindex="0">Видел Чака Норриса</label>
+      </div>
+      <div class="form__selection">
+        <input class="form__selection-input visually-hidden" type="checkbox" id="souvenirs" name="souvenirs" value="souvenirs">tower
+        <label class="form__selection-name" for="souvenirs" tabindex="0">Накупил сувениров</label>
+      </div>
+      <div class="form__selection">
+        <input class="form__selection-input visually-hidden" type="checkbox" id="tower" name="tower" value="tower" checked>
+        <label class="form__selection-name" for="tower" tabindex="0">Удержал башню</label>
+      </div>
+      <div class="form__selection">
+        <input class="form__selection-input visually-hidden" type="checkbox" id="hotel" name="hotel" value="hotel">
+        <label class="form__selection-name" for="hotel" tabindex="0">Разгромил отель</label>
+      </div>
+    </fieldset>
+    <fieldset class="form__name">
+      <div class="form__field">
+        <label class="form__field-name" for="phone" tabindex="0">Номер телефона</label>
+        <input class="form__field-input" type="tel" id="phone" name="phone-number" placeholder="Номер, рожалуйста" aria-label="Номер телефона">
+      </div>
+      <div class="form__field">
+        <label class="form__field-name" for="first" tabindex="0">Введите почту*</label>
+        <input class="form__field-input" type="email" id="email" name="email" placeholder="Введите почту" aria-label="Почта" required>
+      </div>
+    </fieldset>
+    <fieldset class="form__apps">
+      <legend class="form__field-name form__apps-title">С каким приложением путешествовали?</legend>
+      <div class="form__selection">
+        <input class="form__selection-input visually-hidden" type="radio" id="ios" name="apps" value="ios" checked>
+        <label class="form__selection-name" for="ios" tabindex="0">Pink для iOS</label>
+      </div>
+      <div class="form__selection">
+        <input class="form__selection-input visually-hidden" type="radio" id="android" name="apps" value="android">
+        <label class="form__selection-name" for="android" tabindex="0">Pink на Android</label>
+      </div>
+      <div class="form__selection">
+        <input class="form__selection-input visually-hidden" type="radio" id="windows" name="apps" value="windows">
+        <label class="form__selection-name" for="windows" tabindex="0">Windows Phone</label>
+      </div>
+    </fieldset>
+    <fieldset class="form__emotion">
+      <legend class="form__field-name form__emotion-title">Опишите свои эмоции:</legend>
+      <textarea class="form__emotion-text" name="emotion"  placeholder="Можно прям в красках, не стесняясь в выражениях" id="emotion" cols="40" rows="10"></textarea>
+    </fieldset>
+    <button class="rect_btn form__btn" type="submit">Отправить форму</button>
+    <span class="form-note">*  - Обязательные поля</span>
+  </form>
+</main>
+
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="http://placehold.it/75x22" alt="Логотип" class="logo footer-logo__image">
+  </div>
+  <ul class="icons-list social">
+    <li class="icons-list__item social__twitter">
+      <a class="icons-list__item social-button" href="#" aria-label="Пинк в Твиттер">
+        <span class="visually-hidden">Twitter</span>
+      </a>
+    </li>
+    <li class="icons-list__item social__facebook">
+      <a class="icons-list__item social-button" href="#" aria-label="Пинк на Фейсбук">
+        <span class="visually-hidden">Facebook</span>
+      </a>
+    </li>
+    <li class="icons-list__item social__youtube">
+      <a class="icons-list__item social-button" href="#" aria-label="Пинк на Ютуб">
+        <span class="visually-hidden">Youtube</span>
+      </a>
+    </li>
+  </ul>
+  <p class="footer__produce">
+    <span class="footer__produce-text">Разработано</span>
+    <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__produce_link" aria-label="Логотип HTML-Академии">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 60 60">
+        <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+      </svg>
+    </a>
+  </p>
+</footer>
+
+<div class="failure-popup">
+  <h5 class="popup__title">Что-то пошло не так!</h5>
+  <p class="popup__text">
+    Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+  </p>
+  <button class="rect__btn failure-popup__btn" type="button">OK</button>
+</div>
+
+<div class="success-popup">
+  <h5 class="popup__title">Ваша заявка отправлена</h5>
+  <p class="popup__text">
+    Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас
+  </p>
+  <div class="success-popup__btn-block">
+    <button class="rect_btn success-popup__btn" type="button">Закрыть окно</button>
+  </div>
+</div>
 
 </body>
 </html>
+
+
