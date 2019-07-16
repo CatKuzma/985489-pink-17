@@ -1,3 +1,8 @@
-body {
-  background-color: red;
-}
+@import "normalize.scss";
+@import "scaffolding.scss";
+@import "header.scss";
+@import "header-navigation.scss";
+@import "main-pink-app.scss";
+@import "main-features.scss";
+@import "main-slider.scss";
+
