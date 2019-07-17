@@ -1,0 +1,44 @@
+.footer {
+  padding-top: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: center;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 43px;
+}
+.social {
+  margin-bottom: 41px;
+}
+.social-button {
+  display: inline-block;
+  text-align: center;
+  width: 46px;
+  height: 46px;
+  line-height: 42px;
+  border: solid 3px rgba(40, 54, 69, 0.1);
+  background-color: #fefefe;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.social-button__image g,
+.social-button__image path,
+.footer__produce-icon path {
+  fill: #d4345f;
+}
+
+.footer__produce {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 30px;
+  height: 34px;
+  padding-bottom: 40px;
+}
+
+.footer__produce-text {
+  line-height: 34px;
+  vertical-align: top;
+}
