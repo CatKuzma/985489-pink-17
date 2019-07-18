@@ -1,0 +1,54 @@
+.pink-app__pic-wrapper {
+  width: 320px;
+  min-height: 396px;
+  line-height: 396px;
+  background-color: #5d60ff;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+}
+
+.pink-app__pic {
+  vertical-align: bottom;
+}
+
+.download {
+  width: 100%;
+  min-height: 389px;
+  padding-top: 30px;
+  padding-left: 19px;
+  background-color: #1d2631;
+  box-sizing: border-box;
+}
+
+.download__btn {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  width: 281px;
+  height: 55px;
+  line-height: 55px;
+  border: solid 3px #ffffff;
+  border-radius: 55px;
+  box-sizing: border-box;
+}
+
+.download__icons {
+  width: 210px;
+  height: 57px;
+  margin-top: 40px;
+  margin-bottom: 29px;
+  margin-left: 38px;
+}
+
+.download__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  text-align: center;
+  color: #ffffff;
+}

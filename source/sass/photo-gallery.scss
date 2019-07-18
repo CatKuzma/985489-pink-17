@@ -1,0 +1,125 @@
+.gallery__title {
+  display: block;
+  width: 100%;
+  min-height: 185px;
+  margin: 0;
+  padding-bottom: 0;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 39px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.gallery-list {
+  width: 100%;
+  min-height: 1000px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.gallery-item {
+  margin-bottom: 20px;
+}
+
+.gallery-item__wrapper--panorama .gallery-item__caption {
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+
+.gallery-item__wrapper {
+  display: inline-block;
+  width: 280px;
+  margin: 0;
+  text-align: left;
+}
+
+.gallery-item__wrapper--panorama {
+  position: relative;
+  width: 320px;
+}
+
+.gallery-list__item {
+  width: 320px;
+  min-height: 250px;
+}
+
+.flag-panorama {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 21px;
+  padding-bottom: 9px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #d22856;
+}
+
+.gallery-item__caption {
+  width: 280px;
+  padding-top: 25px;
+  padding-left: 18px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.gallery-item__image {
+  vertical-align: bottom;
+  background-color: lightcyan;
+}
+
+.gallery-item__caption-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #283645;
+  margin-bottom: 15px;
+}
+
+.gallery-item__caption-time {
+  font-size: 12px;
+  font-weight: 300;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.gallery-item__caption-text {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.like-wrapper {
+  width: 150px;
+  height: 15px;
+}
+
+.gallery-item__caption-btn {
+  display: inline-block;
+  vertical-align: center;
+  width: 13px;
+  height: 12px;
+  border: none;
+  background-color: #f2f2f2;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+.gallery-item__caption-likeit,
+.gallery-item__caption-amount {
+  font-size: 12px;
+  font-weight: 400;
+  color: #d22856;
+  text-transform: uppercase;
+}
