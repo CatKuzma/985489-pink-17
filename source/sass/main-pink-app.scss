@@ -1,11 +1,26 @@
 .pink-app__pic-wrapper {
   width: 320px;
-  min-height: 396px;
-  line-height: 396px;
+  min-height: 462px;
+  margin-top: -66px;
+  padding-top: 90px;
+  padding-left: 50px;
+  padding-right: 45px;
   background-color: #5d60ff;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 bottom;
+  background-image: url("../img/iphone-hand-mobile@1x.png"),
+  url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 bottom, 0 0;
+  box-sizing: border-box;
+}
+
+.pink-app__pic-title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  color: #ffffff;
 }
 
 .pink-app__pic {
@@ -31,7 +46,7 @@
   text-decoration: none;
   width: 281px;
   height: 55px;
-  line-height: 55px;
+  line-height: 47px;
   border: solid 3px #ffffff;
   border-radius: 55px;
   box-sizing: border-box;
@@ -51,4 +66,67 @@
   line-height: 1.71;
   text-align: center;
   color: #ffffff;
+}
+
+
+@media (min-width: 660px) {
+  .pink-app .container {
+    position: relative;
+  }
+
+  .download--position {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .download {
+    position: absolute;
+    width: 300px;
+    top: 379px;
+    left: 20px;
+    background-color: transparent;
+  }
+
+  .pink-app__pic-wrapper {
+    width: 660px;
+    margin-top: -109px;
+    min-height: 729px;
+    padding-top: 210px;
+    padding-left: 75px;
+    padding-right: 390px;
+    background-color: #5d60ff;
+    background-image: url("../img/iphone-hand-tablet@1x.png"),
+                      url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -20px bottom, -270px 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .pink-app {
+    width: 100%;
+    height: 850px;
+    background-color: #090822;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+  .pink-app__pic-title {
+    font-size: 50px;
+    line-height: 62px;
+    color: #ffffff;
+  }
+  .pink-app__pic-wrapper {
+    width: 960px;
+    height: 850px;
+    margin-top: -121px;
+    min-height: 729px;
+    padding-top: 210px;
+    padding-left: 44px;
+    padding-right: 660px;
+    background-color: transparent;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+  }
 }
