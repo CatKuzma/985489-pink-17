@@ -65,3 +65,21 @@ img {
 .display-hidden {
   display: none;
 }
+
+.flex-wrapper {
+  display: flex;
+}
+
+@media (min-width: 660px) {
+  .container {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
