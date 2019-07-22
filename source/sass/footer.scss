@@ -44,3 +44,24 @@
   line-height: 34px;
   vertical-align: top;
 }
+
+@media (min-width: 660px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .social {
+    width: 180px;
+  }
+}
+
+@media (min-width: 960px) {
+  .footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
