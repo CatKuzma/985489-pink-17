@@ -11,9 +11,9 @@
 .main-navigation__item {
   width: 100%;
   min-height: 63px;
-  background-color: #1d2631;
-  border-top: 1px solid #000000;
-  box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  background-color: $bg-color-darkblue;
+  border-top: 1px solid $color-black;
+  box-shadow: 0 1px 0 0 $color-black, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
 }
 
 .main-navigation__item-link {
@@ -22,7 +22,7 @@
   height: 63px;
   text-align: center;
   line-height: 63px;
-  color: #ffffff;
+  color: $color-white;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 18px;
@@ -79,6 +79,6 @@
   }
 
   .navigation-link__active {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid $color-white;
   }
 }
