@@ -1,6 +1,6 @@
 .features {
   width: 100%;
-  background-color: $color-white;
+  background-color: $color-white ;
   text-align: center;
   box-sizing: border-box;
 }
@@ -18,17 +18,22 @@
   background-color: $color-white;
 }
 
+.features-list__wrapper {
+  background-color: $bg-color-lightgrey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+
 .features-list {
   margin: 0;
   padding: 0;
   padding-top: 84px;
   padding-bottom: 320px;
   list-style: none;
-  background-color: $bg-color-lightgrey;
-  background-image: url("../img/bg-triangle-white.svg"),
-    url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: right 0, center 600px;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 600px;
 }
 
 .features-list__item {

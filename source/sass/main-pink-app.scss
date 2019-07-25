@@ -1,3 +1,11 @@
+.pink-app {
+  background-color: $bg-color-darkblue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+
 .pink-app__pic-wrapper {
   width: 320px;
   min-height: 462px;
@@ -5,11 +13,10 @@
   padding-top: 90px;
   padding-left: 50px;
   padding-right: 45px;
-  background-color: $bg-color-darkblue;
-  background-image: url("../img/iphone-hand-mobile@1x.png"),
-    url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 bottom, 0 0;
+
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
   box-sizing: border-box;
 }
 
@@ -32,7 +39,7 @@
   min-height: 389px;
   padding-top: 30px;
   padding-left: 19px;
-  background-color: $bg-color-darkblue;
+  //background-color: $bg-color-darkblue;
   box-sizing: border-box;
 }
 
@@ -70,6 +77,9 @@
 
 
 @media (min-width: 660px) {
+  .pink-app {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
   .pink-app .container {
     position: relative;
   }
@@ -94,11 +104,10 @@
     padding-top: 210px;
     padding-left: 75px;
     padding-right: 390px;
-    background-color: $bg-color-darkblue;
-    background-image: url("../img/iphone-hand-tablet@1x.png"),
-      url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: -20px bottom, -270px 0;
+    //background-color: $bg-color-darkblue;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: -20px bottom;
   }
 }
 
