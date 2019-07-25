@@ -46,14 +46,18 @@
 .download__btn {
   display: inline-block;
   vertical-align: top;
+  width: 281px;
+  min-height: 55px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 9px;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
   color: $color-white;
   text-decoration: none;
-  width: 281px;
-  height: 55px;
-  line-height: 47px;
+  line-height: 24px;
   border: solid 3px $color-white;
   border-radius: 55px;
   box-sizing: border-box;
@@ -80,6 +84,7 @@
   .pink-app {
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
+
   .pink-app .container {
     position: relative;
   }
