@@ -8,6 +8,7 @@
   }
 
   .features__effect .container {
+    position: relative;
     padding-top: 95px;
     padding-left: 327px;
     padding-right: 30px;
@@ -15,10 +16,21 @@
     text-align: left;
     box-sizing: border-box;
     background-color: $color-white;
-    background-image: url("../img/icon-timer.svg");
-    background-repeat: no-repeat;
-    background-size: 238px  276px;
-    background-position: 20px 60px;
+    background-image: url("../img/icon-editor-diagram-fill.svg"),
+    url("../img/icon-timer.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 200px  200px, 238px  276px;
+    background-position: 40px 115px, 20px 60px;
+  }
+
+  .features__effect .container::before {
+    position: absolute;
+    content: "24";
+    font-size: 96px;
+    color: $font-color-red;
+    top: 200px;
+    left: 80px;
+    font-weight: 700;
   }
 
   .features__effect-title {
@@ -63,14 +75,21 @@
     background-color: $bg-color-lightgrey;
   }
 
-
   .features__effect .container {
     padding-top: 120px;
     padding-left: 375px;
     padding-bottom: 117px;
     background-color: $bg-color-lightgrey;
-    background-size: 298px  345px;
-    background-position: 10px 30px;
+    background-image: url("../img/icon-editor-diagram-fill.svg"),
+      url("../img/icon-timer.svg");
+    background-size: 253px 253px, 298px 345px;
+    background-position: 35px 100px, 10px 30px;
+  }
+
+  .features__effect .container::before {
+    top: 210px;
+    left: 90px;
+    font-size: 120px;
   }
 
   .features__effect-title {
