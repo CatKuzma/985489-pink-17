@@ -6,6 +6,7 @@
   padding: 0;
   list-style: none;
   z-index: 10;
+  box-sizing: border-box;
 }
 
 .main-navigation__item {
@@ -31,16 +32,15 @@
 
 @media (min-width: 960px) {
   .main-navigation {
-    width: 630px;
     margin-right: 10px;
-    margin-top: 20px;
   }
 
   .navigation-list {
-    min-height: 40px;
-    width: 100%;
+    width: 620px;
+    min-height: 50px;
     display: flex;
     justify-content: space-between;
+    margin-top: 0;
   }
 
   .main-navigation__item {
@@ -54,11 +54,7 @@
   }
 
   .main-navigation__item-link {
-    display: inline-block;
-    vertical-align: center;
-    line-height: 40px;
-    width: auto;
-    height: 40px;
+    height: 50px;
     font-size: 18px;
     font-weight: 400;
     text-transform: initial;

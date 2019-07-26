@@ -11,7 +11,7 @@
   min-height: 462px;
   margin-top: -66px;
   padding-top: 90px;
-  padding-left: 50px;
+  padding-left: 46px;
   padding-right: 45px;
 
   background-image: url("../img/iphone-hand-mobile@1x.png");
@@ -26,7 +26,7 @@
   padding: 0;
   font-size: 24px;
   font-weight: 300;
-  line-height: 32px;
+  line-height: 28px;
   color: $color-white;
 }
 
@@ -36,10 +36,9 @@
 
 .download {
   width: 100%;
-  min-height: 389px;
+  min-height: 270px;
   padding-top: 30px;
   padding-left: 19px;
-  //background-color: $bg-color-darkblue;
   box-sizing: border-box;
 }
 
@@ -64,11 +63,11 @@
 }
 
 .download__icons {
-  width: 210px;
+  width: 205px;
   height: 57px;
-  margin-top: 40px;
-  margin-bottom: 29px;
-  margin-left: 38px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 36px;
 }
 
 .download__text {
@@ -76,6 +75,8 @@
   font-weight: 300;
   line-height: 1.71;
   text-align: center;
+  padding-left: 0px;
+  padding-right: 13px;
   color: $color-white;
 }
 
@@ -89,27 +90,54 @@
     position: relative;
   }
 
-  .download--position {
+  .pink-app__pic-title {
     font-size: 40px;
     line-height: 48px;
   }
 
+  .download__btn {
+    width: 300px;
+    margin-bottom: 43px;
+  }
+
+  //.download--position {
+  //  font-size: 40px;
+  //  line-height: 48px;
+  //}
+
   .download {
     position: absolute;
-    width: 300px;
+    padding-top: 0;
+    padding-left: 0;
     top: 379px;
     left: 20px;
     background-color: transparent;
+  }
+
+  .download__icons {
+    width: 205px;
+    height: 57px;
+    margin-top: 0;
+    margin-bottom: 38px;
+    margin-left: 46px;
+  }
+
+  .download__text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 300px;
   }
 
   .pink-app__pic-wrapper {
     width: 660px;
     margin-top: -109px;
     min-height: 729px;
-    padding-top: 210px;
+    padding-top: 200px;
     padding-left: 75px;
     padding-right: 390px;
-    //background-color: $bg-color-darkblue;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: -20px bottom;
@@ -132,17 +160,37 @@
     color: $color-white;
   }
 
+  .download {
+    top: 447px;
+    left: 10px;
+  }
+
+  .download__btn {
+    font-size: 21px;
+    margin-bottom: 70px;
+  }
+
+  .download__icons {
+    width: 205px;
+    height: 57px;
+    margin-bottom: 50px;
+  }
+
+  .download__text {
+    padding-right: 600px;
+  }
+
   .pink-app__pic-wrapper {
     width: 960px;
     height: 850px;
-    margin-top: -121px;
+    margin-top: -108px;
     min-height: 729px;
-    padding-top: 210px;
-    padding-left: 44px;
+    padding-top: 215px;
+    padding-left: 23px;
     padding-right: 660px;
     background-color: transparent;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: 0 bottom;
+    background-position: 25px bottom;
   }
 }
