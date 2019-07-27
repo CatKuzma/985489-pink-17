@@ -17,7 +17,7 @@
     box-sizing: border-box;
     background-color: $color-white;
     background-image: url("../img/icon-editor-diagram-fill.svg"),
-    url("../img/icon-timer.svg");
+      url("../img/icon-timer.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: 200px  200px, 238px  276px;
     background-position: 40px 115px, 20px 60px;
@@ -80,8 +80,8 @@
     padding-left: 375px;
     padding-bottom: 117px;
     background-color: $bg-color-lightgrey;
-    background-image: url("../img/icon-editor-diagram-fill.svg"),
-      url("../img/icon-timer.svg");
+    //background-image: url("../img/icon-editor-diagram-fill.svg"),
+    //  url("../img/icon-timer.svg");
     background-size: 253px 253px, 298px 345px;
     background-position: 35px 100px, 10px 30px;
   }
