@@ -3,49 +3,58 @@
   width: 100%;
   min-height: 185px;
   margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.14;
   padding-bottom: 0;
   padding-top: 50px;
-  padding-left: 40px;
-  padding-right: 39px;
+  padding-left: 34px;
+  padding-right: 34px;
   text-align: center;
   box-sizing: border-box;
 }
 
-.gallery-list {
+.panorama {
+  position: relative;
   width: 100%;
-  min-height: 1000px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-
-.gallery-item {
+  height: auto;
   margin-bottom: 20px;
 }
 
-//.gallery-item__wrapper--panorama .gallery-item__caption {
-//  margin-left: 20px;
-//  box-sizing: border-box;
-//}
+.panorama .container {
+  position: relative;
+}
+
+.panorama-photo {
+  width: 320px;
+  min-height: 137px;
+  margin: 0 auto;
+  background-image: url("../img/panorama-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+}
+
+.panorama .gallery-item__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.panorama .gallery-item__caption {
+  margin: 0 auto;
+}
+
+.gallery-item {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
 
 .gallery-item__wrapper {
   display: inline-block;
   width: 280px;
   margin: 0;
-  text-align: left;
-}
-
-.gallery-item__wrapper--panorama {
   position: relative;
-  width: 320px;
-}
-
-.gallery-list__item {
-  width: 320px;
-  min-height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left;
 }
 
 .flag-panorama {
@@ -53,42 +62,42 @@
   top: 0;
   right: 20px;
   text-transform: uppercase;
-  padding-top: 10px;
+  padding-top: 8px;
   padding-left: 20px;
   padding-right: 21px;
-  padding-bottom: 9px;
+  padding-bottom: 8px;
   font-size: 12px;
-  font-weight: 400;
-  color: #ffffff;
+  font-weight: 700;
+  color: $color-white;
   background-color: #d22856;
 }
 
 .gallery-item__caption {
   width: 280px;
-  padding-top: 25px;
+  padding-top: 20px;
   padding-left: 18px;
   padding-bottom: 20px;
   padding-right: 20px;
-  background-color: #f2f2f2;
+  background-color: $bg-color-lightgrey;
   box-sizing: border-box;
 }
 
 .gallery-item__image {
   vertical-align: bottom;
-  background-color: lightcyan;
+  background-color: lightsteelblue;
 }
 
 .gallery-item__caption-name {
   font-size: 14px;
   font-weight: 700;
-  color: #283645;
+  color: $font-color-darkgrey;
   margin-bottom: 15px;
 }
 
 .gallery-item__caption-time {
   font-size: 12px;
   font-weight: 300;
-  color: #283645;
+  color: $font-color-darkgrey;
   text-transform: uppercase;
 }
 
@@ -97,21 +106,24 @@
   padding: 0;
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  font-weight: 400;
+  color: $font-color-darkgrey;
 }
 
 .like-wrapper {
   width: 150px;
-  height: 15px;
+  height: 23px;
 }
 
 .gallery-item__caption-btn {
   display: inline-block;
   vertical-align: center;
+  margin-right: 15px;
   width: 13px;
   height: 12px;
   border: none;
-  background-color: #f2f2f2;
+  background-color: $bg-color-lightgrey;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -122,7 +134,7 @@
 .gallery-item__caption-amount {
   font-size: 12px;
   font-weight: 400;
-  color: #d22856;
+  color: $font-color-red;
   text-transform: uppercase;
 }
 
@@ -144,54 +156,186 @@
 
 @media (min-width: 660px) {
   .gallery__title {
-    min-height: 230px;
-    padding-top: 110px;
+    min-height: 228px;
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 0;
+    padding-top: 90px;
     padding-left: 100px;
     padding-right: 100px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
+    box-sizing: border-box;
   }
 
-  .gallery-list {
-    padding: 0;
+  .flag-panorama {
+    top: 55px;
+    right: 20px;
+  }
+
+  .panorama {
+    margin-bottom: 42px;
+  }
+
+  .panorama-photo {
+    width: 100%;
+    min-height: 509px;
+    background-image: url("../img/panorama-tablet@1x.jpg");
+    background-size: 700px 509px;
+  }
+
+  .panorama .gallery-item__caption {
+    padding-top: 25px;
+    padding-left: 25px;
+    width: 620px;
     display: flex;
-    justify-content: space-around;
+    align-items: baseline;
     flex-wrap: wrap;
-    width: 660px;
+  }
+
+  .panorama .gallery-item__caption-name {
+    margin-right: 3px;
+    margin-bottom: 0;
+    order: 1;
+  }
+
+  .panorama .gallery-item__caption-time {
+    order: 2;
+  }
+
+  .panorama .like-wrapper {
+    display: flex;
+    width: 130px;
+    justify-content: left;
+    align-items: center;
     margin-left: auto;
-    margin-right: auto;
+    order: 3;
+  }
+
+  .panorama .gallery-item__caption-text {
+    order: 4;
+  }
+
+  .panorama .gallery-item__caption-likeit {
+    margin-right: 3px;
+    order: 1;
+  }
+
+  .panorama .gallery-item__caption-amount {
+    order: 2;
+  }
+
+  .panorama .gallery-item__caption-btn {
+    margin-left: auto;
+    margin-right: 10px;
+    order: 3;
   }
 
 
-  .gallery-list__item {
-    width: 280px;
-  }
-
-  .gallery-list__item:nth-child(1) {
+  .gallery .container {
     width: 660px;
+    min-height: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .download-photo__header {
-    min-height: 195px;
-    font-size: 18px;
-    padding-left: 100px;
-    padding-right: 100px;
+  .gallery-item:nth-child(even) {
+    margin-right: 20px;
+  }
+
+  .gallery-item__wrapper {
+    width: 300px;
+    min-height: 400px;
+  }
+
+  .caption--flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 155px;
+    box-sizing: border-box;
+  }
+
+  .gallery-item__small .gallery-item__image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .gallery-item__small .gallery-item__caption {
+    padding-top: 25px;
+    padding-left: 25px;
+  }
+
+  .caption--flex-column .like-wrapper {
+    display: flex;
+    width: 100%;
+    align-self: flex-end;
+    align-items: center;
+    margin-right: auto;
+    margin-top: auto;
+  }
+
+  .gallery-item__small .gallery-item__caption-likeit {
+    margin-right: 3px;
+    order: 1;
+  }
+
+  .gallery-item__small .gallery-item__caption-amount {
+    order: 2;
+  }
+
+  .gallery-item__small .gallery-item__caption-btn {
+    margin-left: auto;
+    margin-right: 13px;
+    order: 3;
   }
 }
 
 @media (min-width: 960px) {
-  .gallery-list {
-    width: 960px;
+  .gallery__title {
+    padding-bottom: 90px;
+    padding-top: 90px;
+    padding-left: 170px;
+    padding-right: 170px;
   }
 
-  .gallery-list__item:nth-child(1) {
+  .flag-panorama {
+    top: 50px;
+    right: 10px;
+  }
+
+  .panorama {
+    margin-bottom: 52px;
+  }
+
+  .panorama-photo {
     width: 100%;
+    min-height: 506px;
+    background-image: url("../img/panorama-desktop@1x.jpg");
+    background-size: 1200px 506px;
   }
 
-  .download-photo__header {
-    min-height: 190px;
-    padding-left: 270px;
-    padding-right: 270px;
+  .panorama .gallery-item__caption {
+    padding-bottom: 8px;
+    width: 940px;
+  }
+
+  .gallery-item__small .gallery-item__image {
+    height: 400px;
+  }
+
+  .gallery-item {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 55px;
+  }
+
+  .gallery-item:nth-child(even) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .gallery .container {
+    width: 960px;
+    justify-content: space-around;
   }
 }

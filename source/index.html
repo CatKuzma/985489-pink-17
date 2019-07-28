@@ -2,14 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="header">
-  <div class="container">
-    <div class="header__flex-wrapper">
+  <div class="header__flex-wrapper">
+    <div class="container">
       <div class="header-logo">
         <a class="header-logo__link">
           <svg class="header-logo__mobile-show" version="1.0" id="Layer_11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="75" height="23" viewBox="0 0 75 23" enable-background="new 0 0 75 23" xml:space="preserve">
@@ -81,26 +82,25 @@
 
         </a>
 
-
       </div>
-      <nav class="main-navigation">
-        <ul class="navigation-list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__item-link navigation-link__active">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="photo.html" class="main-navigation__item-link">Фотографии</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="form.html" class="main-navigation__item-link">Конкурс</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-navigation__item-link">Htmlacademy</a>
-          </li>
-        </ul>
-      </nav>
     </div>
 
+    <nav class="main-navigation">
+      <ul class="navigation-list">
+        <li class="main-navigation__item">
+          <a class="main-navigation__item-link navigation-link__active">Главная</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="photo.html" class="main-navigation__item-link">Фотографии</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="form.html" class="main-navigation__item-link">Конкурс</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="main-navigation__item-link">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
 
@@ -108,7 +108,7 @@
 <main class="main-page">
   <h1 class="visually-hidden">Приложение Пинк</h1>
   <section class="pink-app">
-    <div class="container download--position">
+    <div class="container">
       <h2 class="visually-hidden">Скачать приложение</h2>
       <div class="pink-app__pic-wrapper">
         <h3 class="pink-app__pic-title">Взгляните на жизнь иначе!</h3>
@@ -158,8 +158,7 @@
           </li>
           <li class="features-list__item">
             <h3 class="features-list__item-title">Меняет мир вокруг</h3>
-            <p class="features-list__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-              усилить эффект</p>
+            <p class="features-list__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br> усилить эффект</p>
           </li>
           <li class="features-list__item">
             <h3 class="features-list__item-title">Заводит новых друзей</h3>
@@ -174,8 +173,8 @@
     <div class="features__effect">
       <div class="container">
         <h4 class="features__effect-title">Эффект <br class="br-display"> на 24 часа!</h4>
-        <p class="features__effect-text">Британские ученые провели исследования и доказали,
-          что положительный эффект от использования приложения длится целые сутки!</p>
+        <p class="features__effect-text">Британские ученые провели исследования и доказали,<br class="br--one">
+          что положительный эффект<br class="br--two"> от использования приложения длится целые сутки!</p>
         <a href="" class="features__effect-link">Узнать больше об исследовании</a>
       </div>
 
@@ -198,6 +197,7 @@
         <div class="slides">
           <div class="slide-01">
             <h3 class="slide__title">Николай Петров</h3>
+            <span class="slide_subtitle">25 лет, водитель трамвая</span>
             <p class="slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые
               вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
