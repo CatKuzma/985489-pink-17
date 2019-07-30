@@ -15,7 +15,7 @@
   color: $color-black;
 }
 
-.slide_subtitle {
+.slide__subtitle {
   display: none;
 }
 
@@ -81,7 +81,7 @@
 }
 
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .slider {
     padding-top: 5px;
     padding-bottom: 90px;
@@ -91,29 +91,29 @@
   .slide-02,
   .slide-03 {
     display: flex;
-    width: 660px;
+    width: $tablet-width;
     min-height: 100px;
     flex-wrap: wrap;
   }
 
   .slide__title {
-    width: 660px;
+    width: $tablet-width;
     height: auto;
     font-size: 20px;
     margin-bottom: 8px;
     order: 2;
   }
 
-  .slide_subtitle {
+  .slide__subtitle {
     display: block;
-    width: 660px;
+    width: $tablet-width;
     height: auto;
     font-weight: 400;
     order: 3;
   }
 
   .slide__text {
-    width: 660px;
+    width: $tablet-width;
     height: auto;
     margin-bottom: 35px;
     padding-left: 10px;

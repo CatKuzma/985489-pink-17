@@ -29,6 +29,10 @@ $color-white: #ffffff;
 $color-black: #000000;
 $font-color-darkgrey: #283645;
 $font-color-red: #d22856;
+$mobile-width: 320px;
+$tablet-width: 660px;
+$desktop-width: 960px;
+
 
 body {
   margin: 0;
@@ -42,7 +46,7 @@ body {
 }
 
 .container {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
 }
 
@@ -78,16 +82,16 @@ img {
   display: flex;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .container {
-    width: 660px;
+    width: $tablet-width;
     margin: 0 auto;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .container {
-    width: 960px;
+    width: $desktop-width;
     margin: 0 auto;
   }
 }

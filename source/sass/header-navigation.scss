@@ -30,7 +30,7 @@
   font-weight: 700;
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .main-navigation {
     margin-right: 10px;
   }
@@ -60,7 +60,7 @@
     text-transform: initial;
   }
 
-  .navigation-link__active {
+  .navigation-link--active {
     border-bottom: 2px solid $color-white;
   }
 }

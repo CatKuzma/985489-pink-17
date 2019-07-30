@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .features__effect {
     display: block;
   }
@@ -70,7 +70,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .features__effect {
     background-color: $bg-color-lightgrey;
   }
@@ -80,8 +80,6 @@
     padding-left: 375px;
     padding-bottom: 117px;
     background-color: $bg-color-lightgrey;
-    //background-image: url("../img/icon-editor-diagram-fill.svg"),
-    //  url("../img/icon-timer.svg");
     background-size: 253px 253px, 298px 345px;
     background-position: 35px 100px, 10px 30px;
   }

@@ -23,7 +23,7 @@
   color: $color-white;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .photo-page__title-wrapper {
     height: 439px;
     margin-top: -109px;
@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .photo-page__title-wrapper {
     width: 100%;
     height: 396px;

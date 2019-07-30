@@ -4,7 +4,7 @@
 }
 
 .header .container {
-  width: 320px;
+  width: $mobile-width;
 }
 
 .header-logo {
@@ -24,9 +24,9 @@
   display: none;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .header .container {
-    width: 660px;
+    width: $tablet-width;
   }
 
   .header-logo {
@@ -48,7 +48,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .header {
     position: relative;
     width: 100%;
