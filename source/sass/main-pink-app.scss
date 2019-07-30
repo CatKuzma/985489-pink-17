@@ -33,51 +33,52 @@
   vertical-align: bottom;
 }
 
-.download {
-  width: 100%;
-  min-height: 270px;
-  padding-top: 30px;
-  padding-left: 19px;
-  box-sizing: border-box;
-}
-
-.download__btn {
-  display: inline-block;
-  vertical-align: top;
-  width: 281px;
-  min-height: 55px;
-  padding-top: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 9px;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  color: $color-white;
-  text-decoration: none;
-  line-height: 24px;
-  border: solid 3px $color-white;
-  border-radius: 55px;
-  box-sizing: border-box;
-}
-
-.download__icons {
-  width: 205px;
-  height: 57px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  margin-left: 36px;
-}
-
-.download__text {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.71;
-  text-align: center;
-  padding-left: 0;
-  padding-right: 13px;
-  color: $color-white;
-}
+//.download {
+//  width: 100%;
+//  min-height: 270px;
+//  padding-top: 30px;
+//  padding-left: 19px;
+//  box-sizing: border-box;
+//}
+//
+//.download__btn {
+//  display: inline-block;
+//  vertical-align: top;
+//  width: 281px;
+//  min-height: 55px;
+//  padding-top: 10px;
+//  padding-left: 15px;
+//  padding-right: 15px;
+//  padding-bottom: 9px;
+//  font-size: 18px;
+//  font-weight: 700;
+//  text-align: center;
+//  color: $color-white;
+//  text-decoration: none;
+//  line-height: 24px;
+//  border: solid 3px $color-white;
+//  border-radius: 55px;
+//  box-sizing: border-box;
+//}
+//
+//.download__icons {
+//  width: 205px;
+//  height: 57px;
+//  margin-top: 30px;
+//  margin-bottom: 20px;
+//  margin-left: 36px;
+//}
+//
+//.download__text {
+//  margin: 0;
+//  padding: 0;
+//  padding-right: 30px;
+//  font-size: 14px;
+//  font-weight: 300;
+//  line-height: 1.71;
+//  text-align: center;
+//  color: $color-white;
+//}
 
 
 @media (min-width: $tablet-width) {
@@ -94,36 +95,36 @@
     line-height: 48px;
   }
 
-  .download__btn {
-    width: 300px;
-    margin-bottom: 43px;
-  }
-
-  .download {
-    position: absolute;
-    padding-top: 0;
-    padding-left: 0;
-    top: 379px;
-    left: 20px;
-    background-color: transparent;
-  }
-
-  .download__icons {
-    width: 205px;
-    height: 57px;
-    margin-top: 0;
-    margin-bottom: 38px;
-    margin-left: 46px;
-  }
-
-  .download__text {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 24px;
-    text-align: left;
-    padding-left: 5px;
-    padding-right: 300px;
-  }
+  //.download {
+  //  position: absolute;
+  //  padding-top: 0;
+  //  padding-left: 0;
+  //  top: 379px;
+  //  left: 20px;
+  //  background-color: transparent;
+  //}
+  //
+  //.download__btn {
+  //  width: 300px;
+  //  margin-bottom: 43px;
+  //}
+  //
+  //.download__icons {
+  //  width: 205px;
+  //  height: 57px;
+  //  margin-top: 0;
+  //  margin-bottom: 38px;
+  //  margin-left: 46px;
+  //}
+  //
+  //.download__text {
+  //  font-size: 18px;
+  //  font-weight: 300;
+  //  line-height: 24px;
+  //  text-align: left;
+  //  padding-left: 5px;
+  //  padding-right: 300px;
+  //}
 
   .pink-app__pic-wrapper {
     width: $tablet-width;
@@ -155,25 +156,25 @@
     color: $color-white;
   }
 
-  .download {
-    top: 447px;
-    left: 10px;
-  }
-
-  .download__btn {
-    font-size: 21px;
-    margin-bottom: 70px;
-  }
-
-  .download__icons {
-    width: 205px;
-    height: 57px;
-    margin-bottom: 50px;
-  }
-
-  .download__text {
-    padding-right: 600px;
-  }
+  //.download {
+  //  top: 447px;
+  //  left: 10px;
+  //}
+  //
+  //.download__btn {
+  //  font-size: 21px;
+  //  margin-bottom: 70px;
+  //}
+  //
+  //.download__icons {
+  //  width: 205px;
+  //  height: 57px;
+  //  margin-bottom: 50px;
+  //}
+  //
+  //.download__text {
+  //  padding-right: 600px;
+  //}
 
   .pink-app__pic-wrapper {
     width: $desktop-width;
