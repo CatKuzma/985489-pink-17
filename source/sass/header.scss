@@ -19,11 +19,6 @@
   box-sizing: border-box;
 }
 
-.header-logo__tablet-show,
-.header-logo__desktop-show {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .header .container {
     width: $tablet-width;
@@ -39,12 +34,6 @@
 
   .header-logo__tablet-show {
     display: block;
-  }
-
-
-  .header-logo__mobile-show,
-  .header-logo__desktop-show {
-    display: none;
   }
 }
 
@@ -77,11 +66,6 @@
     margin-top: 6px;
     min-height: 49px;
     box-sizing: border-box;
-  }
-
-  .header-logo__mobile-show,
-  .header-logo__tablet-show {
-    display: none;
   }
 
   .header-logo__desktop-show {
