@@ -26,7 +26,7 @@
 }
 
 .panorama-photo {
-  width: 320px;
+  width: $mobile-width;
   min-height: 137px;
   margin: 0 auto;
   background-image: url("../img/panorama-mobile@1x.jpg");
@@ -36,7 +36,7 @@
 }
 
 .panorama .gallery-item__wrapper {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
 }
 
@@ -51,6 +51,7 @@
 
 .gallery-item__wrapper {
   display: inline-block;
+  vertical-align: top;
   width: 280px;
   margin: 0;
   position: relative;
@@ -154,7 +155,7 @@
   box-sizing: border-box;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .gallery__title {
     min-height: 228px;
     font-size: 18px;
@@ -231,7 +232,7 @@
 
 
   .gallery .container {
-    width: 660px;
+    width: $tablet-width;
     min-height: 1px;
     display: flex;
     flex-wrap: wrap;
@@ -290,7 +291,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .gallery__title {
     padding-bottom: 90px;
     padding-top: 90px;
@@ -335,7 +336,7 @@
   }
 
   .gallery .container {
-    width: 960px;
+    width: $desktop-width;
     justify-content: space-around;
   }
 }

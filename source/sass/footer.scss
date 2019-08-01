@@ -29,7 +29,7 @@
 .social-button__image g,
 .social-button__image path,
 .footer__produce-icon path {
-  fill: #d4345f;
+  fill: $bg-color-red;
 }
 
 .footer__produce {
@@ -45,7 +45,7 @@
   vertical-align: top;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .footer {
     display: flex;
     justify-content: space-between;
@@ -63,7 +63,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $desktop-width) {
   .footer {
     padding-left: 10px;
     padding-right: 10px;
