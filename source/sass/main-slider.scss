@@ -1,7 +1,7 @@
 .slider {
   position: relative;
   padding-top: 40px;
-  padding-bottom: 90px;
+  padding-bottom: 75px;
   background-color: $color-white;
   text-align: center;
 }
@@ -84,7 +84,8 @@
 @media (min-width: $tablet-width) {
   .slider {
     padding-top: 5px;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
+    background-color: red;
   }
 
   .slide-01,
@@ -94,6 +95,12 @@
     width: $tablet-width;
     min-height: 100px;
     flex-wrap: wrap;
+  }
+
+
+  .slide-02,
+  .slide-03 {
+    display: none;
   }
 
   .slide__title {
@@ -121,5 +128,9 @@
     font-size: 18px;
     line-height: 30px;
     order: 1;
+  }
+
+  .toggles {
+    top: 225px;
   }
 }
