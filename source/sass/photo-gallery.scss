@@ -53,6 +53,7 @@
   display: inline-block;
   vertical-align: top;
   width: 280px;
+  min-height: 180px;
   margin: 0;
   position: relative;
   text-align: left;
@@ -83,7 +84,9 @@
   box-sizing: border-box;
 }
 
-.gallery-item__image {
+.gallery-item__small .gallery-item__image {
+  width: 280px;
+  height: 180px;
   vertical-align: bottom;
   background-color: lightsteelblue;
 }
