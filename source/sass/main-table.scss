@@ -43,6 +43,7 @@
 .bg--position {
   background-position: 0 center;
 }
+
 .prices-table__row-cell {
   height: 57px;
   border: 2px solid #e9e9e9;
@@ -81,9 +82,6 @@
   background-position: 230px center;
 }
 
-//.bg--position {
-//  background-position: -10px center;
-//}
 @media (min-width: $tablet-width) {
   .prices-table {
     width: 620px;
@@ -160,7 +158,6 @@
     border-left: 2px solid #e9e9e9;
     border-right: 2px solid #e9e9e9;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -188,6 +185,7 @@
   .tariff-name {
     font-size: 18px;
   }
+
   .row-name {
     padding-left: 21px;
     font-size: 18px;
