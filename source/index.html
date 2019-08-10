@@ -144,10 +144,25 @@
         <input type="radio" id="btn-01" value="btn-01" name="slider-toggles" class="btn-01 visually-hidden" checked>
         <input type="radio" id="btn-02" value="btn-02" name="slider-toggles" class="btn-02 visually-hidden">
         <input type="radio" id="btn-03" value="btn-03" name="slider-toggles" class="btn-03 visually-hidden">
-        <div class="toggles">
+        <input type="radio" id="btn-04" value="btn-04" name="slider-toggles" class="btn-04 visually-hidden">
+        <input type="radio" id="btn-05" value="btn-05" name="slider-toggles" class="btn-05 visually-hidden">
+        <div class="sss"></div>
+        <div class="toggles slider-toggles">
           <label class="slider-toggle" for="btn-01" aria-label="Первый отзыв"></label>
           <label class="slider-toggle" for="btn-02" aria-label="Второй отзыв"></label>
           <label class="slider-toggle" for="btn-03" aria-label="Третий отзыв"></label>
+        </div>
+        <div class="slider-arrows">
+          <label class="slider-arrow" for="btn-04" aria-label="Первый отзыв">
+            <svg  width="22" height="42">
+              <use  xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
+          </label>
+          <label class="slider-arrow" for="btn-05" aria-label="Второй отзыв">
+            <svg  width="22" height="42">
+              <use  xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </label>
         </div>
         <div class="slides">
           <div class="slide-01">
@@ -171,56 +186,56 @@
 
   </section>
   <section class="prices">
-    <div class="container">
+<!--    <div class="container">-->
       <h2 class="visually-hidden">Выбор тарифа</h2>
       <div class="prices-wrapper">
-        <input type="radio" id="btn-11" value="btn-11" name="prices-toggles" class="visually-hidden">
-        <input type="radio" id="btn-12" value="btn-12" name="prices-toggles" class="visually-hidden" checked>
-        <input type="radio" id="btn-13" value="btn-13" name="prices-toggles" class="visually-hidden">
-        <div class="toggles">
-          <label class="prices-toggle" for="btn-11" aria-label="Тариф "></label>
-          <label class="prices-toggle" for="btn-12" aria-label="Тариф Стандарт"></label>
-          <label class="prices-toggle" for="btn-13" aria-label="Тариф "></label>
-        </div>
         <table class="prices-table">
-          <tr class="prices-table__row row-header--modifier">
-            <th class="prices-table__row-header"></th>
-            <th class="prices-table__row-header">
-              <span class="tariff-name"></span>
-              <span class="tariff-price"></span>
+          <tr class="prices-table__row">
+            <th class="prices-table__row-header cell-hidden"></th>
+            <th class="prices-table__row-header cell-mobile">
+              <span class="tariff-name cell-hidden">База</span>
+              <span class="tariff-price cell-hidden">1,99 USD</span>
             </th>
-            <th class="prices-table__row-header">
+            <th class="prices-table__row-header row-header--borderleft-color">
               <span class="tariff-name">Стандарт</span>
               <span class="tariff-price">3,99 USD</span>
             </th>
-            <th class="prices-table__row-header">
-              <span class="tariff-name"></span>
-              <span class="tariff-price"></span>
+            <th class="prices-table__row-header cell-mobile">
+              <span class="tariff-name cell-hidden">Анлим</span>
+              <span class="tariff-price cell-hidden">9,99 USD</span>
             </th>
           </tr>
           <tr class="prices-table__row">
-            <td class="prices-table__row-cell"></td>
-            <td class="prices-table__row-cell"></td>
-            <td class="prices-table__row-cell">Розовый фильтр</td>
-            <td class="prices-table__row-cell"></td>
+            <td class="prices-table__row-cell cell-hidden"><span class="row-name">Розовый фильтр</span></td>
+            <td class="prices-table__row-cell cell-mobile bg-yes"></td>
+            <td class="row-cell__mobile prices-table__row-cell bg-yes"><span class="row-name__mobile">Розовый фильтр</span></td>
+            <td class="prices-table__row-cell cell-mobile bg-yes"></td>
           </tr>
           <tr class="prices-table__row">
-            <td class="prices-table__row-cell"></td>
-            <td class="prices-table__row-cell"></td>
-            <td class="prices-table__row-cell">Смайлики</td>
-            <td class="prices-table__row-cell"></td>
+            <td class="prices-table__row-cell cell-hidden"><span class="row-name">Смайлики</span></td>
+            <td class="prices-table__row-cell cell-mobile bg-no"></td>
+            <td class="row-cell__mobile prices-table__row-cell bg-yes"><span class="row-name__mobile">Смайлики</span></td>
+            <td class="prices-table__row-cell cell-mobile bg-yes"></td>
           </tr>
           <tr class="prices-table__row">
-            <td class="prices-table__row-cell"></td>
-            <td class="prices-table__row-cell"></td>
-            <td class="prices-table__row-cell">Комментарии</td>
-            <td class="prices-table__row-cell"></td>
+            <td class="prices-table__row-cell cell-hidden"><span class="row-name">Комментарии</span></td>
+            <td class="prices-table__row-cell cell-mobile bg-no"></td>
+            <td class="row-cell__mobile prices-table__row-cell bg-no"><span class="row-name__mobile ">Комментарии</span></td>
+            <td class="prices-table__row-cell cell-mobile bg-yes"></td>
           </tr>
         </table>
+        <input type="radio" id="btn-11" value="btn-11" name="prices-toggles" class="btn-11 visually-hidden">
+        <input type="radio" id="btn-12" value="btn-12" name="prices-toggles" class="btn-12 visually-hidden" checked>
+        <input type="radio" id="btn-13" value="btn-13" name="prices-toggles" class="btn-13 visually-hidden">
+        <div class="toggles price-toggles">
+          <label class="slider-toggle" for="btn-11" aria-label="Тариф "></label>
+          <label class="slider-toggle" for="btn-12" aria-label="Тариф Стандарт"></label>
+          <label class="slider-toggle" for="btn-13" aria-label="Тариф "></label>
+        </div>
       </div>
-    </div>
-
+<!--    </div>-->
   </section>
+
   <section class="contacts">
     <div class="container">
       <h2 class="visually-hidden">Контакты</h2>

@@ -1,0 +1,24 @@
+.prices {
+  width: 100%;
+  background-color: $bg-color-lightgrey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: right 0;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 46px;
+}
+
+@media (min-width: $tablet-width) {
+  .prices {
+    padding-top: 97px;
+    padding-bottom: 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .prices {
+    padding-top: 160px;
+    padding-bottom: 53px;
+  }
+}

@@ -1,0 +1,195 @@
+.prices-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+.prices-table__row-header {
+  width: 274px;
+  height: 94px;
+  border: none;
+  background-color: $bg-color-darkblue;
+  border-bottom: 2px solid $bg-color-darkblue;
+}
+
+.tariff-name {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.67;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.tariff-price {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.cell-hidden {
+  display: none;
+}
+
+.bg--position {
+  background-position: 0 center;
+}
+.prices-table__row-cell {
+  height: 57px;
+  border: 2px solid #e9e9e9;
+  background-color: #ffffff;
+}
+
+.cell-mobile {
+  width: auto;
+}
+
+.row-header--borderleft-color {
+  border-left: 2px solid #e9e9e9;
+  border-right: 2px solid #e9e9e9;
+}
+
+.row-name,
+.row-name__mobile {
+  padding-left: 22px;
+  font-size: 14px;
+  color: #283645;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.bg-no {
+  background-image: url("../img/icon-no.svg");
+}
+
+.bg-yes {
+  background-image: url("../img/icon-yes.svg");
+}
+
+.bg-no,
+.bg-yes {
+  background-repeat: no-repeat;
+  background-position: 230px center;
+}
+
+//.bg--position {
+//  background-position: -10px center;
+//}
+@media (min-width: $tablet-width) {
+  .prices-table {
+    width: 620px;
+  }
+
+  .cell-hidden {
+    display: table-cell;
+    border: none;
+  }
+
+  .prices-table__row-cell {
+    height: 43px;
+    border-top: none;
+    border-left: 2px solid #e9e9e9;
+    border-bottom: 2px solid #e9e9e9;
+    //background-color: #ffffff;
+    vertical-align: center;
+  }
+
+  .cell-mobile {
+    width: 25%;
+    height: 43px;
+    //box-sizing: border-box;
+  }
+
+  .prices-table__row-header {
+    width: 25%;
+    height: 76px;
+    border: none;
+  }
+
+  .prices-table__row-header:nth-child(1) {
+    background-color: $bg-color-lightgrey;
+    border-bottom: 2px solid #e9e9e9;
+  }
+
+  .row-header--borderleft-color {
+    border-left: 2px solid #e9e9e9;
+    border-right: 2px solid #e9e9e9;
+  }
+
+  .row-name {
+    padding-left: 15px;
+    font-size: 14px;
+    text-transform: initial;
+  }
+
+  .tariff-price {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .tariff-name {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .row-name__mobile {
+    display: none;
+  }
+
+  .bg-no,
+  .bg-yes {
+    background-position: center center;
+  }
+
+  .prices-table__row-header:nth-child(3) {
+    border-left: 2px solid #e9e9e9;
+    border-right: 2px solid #e9e9e9;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .prices-table {
+    width: 940px;
+  }
+
+  .prices-table__row-cell {
+    height: 57px;
+  }
+
+  .cell-mobile {
+    height: 57px;
+  }
+
+  .prices-table__row-header {
+    height: 97px;
+    border: none;
+  }
+
+  .tariff-price {
+    font-size: 24px;
+  }
+
+  .tariff-name {
+    font-size: 18px;
+  }
+  .row-name {
+    padding-left: 21px;
+    font-size: 18px;
+  }
+}
