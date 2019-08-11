@@ -1,0 +1,203 @@
+.form {
+  padding-top: 54px;
+}
+
+.form__title {
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-bottom: 45px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 2.14;
+  color: $font-color-darkgrey;
+  box-sizing: border-box;
+}
+
+.form-box {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.form__name {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__field-name {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: $bg-color-red;
+  text-transform: uppercase;
+}
+
+.form__field-input {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.fieldset-wrapper {
+  background-color: $bg-color-lightgrey;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+//---------- Name ---------
+
+.form__name .form__field-name {
+  margin-bottom: 16px;
+}
+
+.form__name .form__field-input {
+  height: 59px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.form__name .form__field {
+  margin-bottom: 25px;
+  padding-bottom: 30px;
+}
+.form__name .form__field:nth-child(3) {
+  margin-bottom: 0;
+}
+
+//---------- CheckBoxes ---------
+
+.form__progress-title {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 41px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.form__selection-name {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding-left: 70px;
+  font-size: 18px;
+  font-weight: 400;
+  color: $font-color-darkgrey;
+  margin-bottom: 63px;
+  box-sizing: border-box;
+}
+
+//---------- Contacts ---------
+
+.form__contacts {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.form__contacts .form__field:nth-child(1) {
+  margin-bottom: 25px;
+}
+
+.form__contacts .form__field-name {
+  margin-bottom: 16px;
+}
+
+.form__contacts .form__field-input {
+  height: 59px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+//---------- Radio Buttons ---------
+
+.form__apps {
+  padding-top: 40px;
+  background-color: yellow;
+}
+
+.form__apps-title {
+  padding-top: 30px;
+  background-color: lightcyan;
+  text-align: center;
+}
+//---------- Textarea ----------
+
+.form__emotion {
+  margin: 0 auto;
+  width: 320px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.form__emotion-title {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.form__emotion-text {
+  width: 276px;
+  height: 197px;
+  padding-left: 19px;
+  padding-top: 19px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  box-sizing: border-box;
+}
+
+//----------- Form - Button ---------
+
+.form-button {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.form__btn {
+  display: inline-block;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  vertical-align: top;
+  text-transform: uppercase;
+  min-height: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  color: $color-white;
+  border: none;
+  background-color: #2aab6d;
+  cursor: pointer;
+}
+
+.form-note {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $font-color-darkgrey;
+}
+
+.red-star {
+  color: $font-color-red;
+}
