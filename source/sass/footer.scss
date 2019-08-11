@@ -17,9 +17,9 @@
 .social-button {
   display: inline-block;
   text-align: center;
-  width: 46px;
-  height: 46px;
-  line-height: 42px;
+  width: 50px;
+  height: 50px;
+  line-height: 44px;
   border: solid 3px rgba(40, 54, 69, 0.1);
   background-color: #fefefe;
   border-radius: 50%;
@@ -50,8 +50,8 @@
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .social {
@@ -59,7 +59,16 @@
   }
 
   .footer__produce {
+    display: flex;
+    justify-content: space-between;
+    min-width: 150px;
+    min-height: 50px;
     margin-bottom: 0;
+  }
+
+  .footer__produce-icon {
+    width: 27px;
+    height: 34px;
   }
 }
 
