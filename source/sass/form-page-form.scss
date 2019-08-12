@@ -86,6 +86,11 @@
 
 //---------- CheckBoxes ---------
 
+.form__doit {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
 .form__progress-title {
   padding-left: 20px;
   padding-right: 20px;
@@ -99,10 +104,11 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding-left: 80px;
+  padding-left: 75px;
   min-height: 35px;
   margin-bottom: 20px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .form__progress-name::before {
@@ -131,6 +137,8 @@
 }
 
 .form__progress-name {
+  padding: 0;
+  margin: 0;
   width: 100%;
   font-size: 18px;
   font-weight: 400;
@@ -138,12 +146,12 @@
   box-sizing: border-box;
 }
 
-.form__progress:hover .form__selection-name:before {
+.form__progress:hover .form__progress-name::before {
   border: solid 2px $font-color-darkgrey;
 }
 
 
-.form__progress:active .form__progress-name:before {
+.form__progress:active .form__progress-name::before {
   border: solid 2px $bg-color-red;
 }
 
@@ -156,7 +164,12 @@
   display: block;
 }
 
-.form__progress-input:not(:checked) ~ .form__progress-name[for="selfie"]::after,.form__progress-input:not(:checked) ~ .form__selection-name[for="beach"]::after,.form__progress-input:not(:checked) ~ .form__progress-name[for="noris"]::after,.form__progress-input:not(:checked) ~ .form__progress-name[for="souvenirs"]::after,.form__progress-input:not(:checked) ~ .form__progress-name[for="tower"]::after,.form__progress-input:not(:checked) ~ .form__progress-name[for="hotel"]::after {
+.form__progress-input:not(:checked) ~ .form__progress-name[for="selfie"]::after,
+.form__progress-input:not(:checked) ~ .form__progress-name[for="beach"]::after,
+.form__progress-input:not(:checked) ~ .form__progress-name[for="noris"]::after,
+.form__progress-input:not(:checked) ~ .form__progress-name[for="souvenirs"]::after,
+.form__progress-input:not(:checked) ~ .form__progress-name[for="tower"]::after,
+.form__progress-input:not(:checked) ~ .form__progress-name[for="hotel"]::after {
   background: none;
 }
 //---------- Contacts ---------
@@ -186,14 +199,79 @@
 
 .form__apps {
   padding-top: 40px;
-  background-color: yellow;
 }
 
 .form__apps-title {
   padding-top: 30px;
-  background-color: lightcyan;
   text-align: center;
 }
+
+.form__selection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 80px;
+  min-height: 37px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.form__selection-name::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  border: solid 2px #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.form__selection-name::after {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: 11px;
+  width: 15px;
+  height: 15px;
+  background-color: $bg-color-red;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.form__selection-name {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  color: $font-color-darkgrey;
+  box-sizing: border-box;
+}
+
+.form__selection:hover .form__selection-name:before {
+  border: solid 2px $font-color-darkgrey;
+}
+
+
+.form__selection:active .form__selection-name:before {
+  border: solid 2px $bg-color-red;
+}
+
+.form__selection-input:checked ~ .form__selection-name[for="ios"]::after,
+.form__selection-input:checked ~ .form__selection-name[for="android"]::after,
+.form__selection-input:checked ~ .form__selection-name[for="windows"]::after {
+  display: block;
+}
+
+.form__selection-input:not(:checked) ~ .form__selection-name[for="ios"]::after,.form__selection-input:not(:checked) ~ .form__selection-name[for="android"]::after,.form__selection-input:not(:checked) ~ .form__selection-name[for="windows"]::after {
+  background: none;
+}
+
 //---------- Textarea ----------
 
 .form__emotion {
