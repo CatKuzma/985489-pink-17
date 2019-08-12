@@ -1,5 +1,5 @@
 .form {
-  padding-top: 54px;
+  padding-top: 45px;
 }
 
 .form__title {
@@ -10,6 +10,7 @@
   margin-bottom: 45px;
   text-align: center;
   font-size: 14px;
+  font-weight: 400;
   line-height: 2.14;
   color: $font-color-darkgrey;
   box-sizing: border-box;
@@ -54,9 +55,17 @@
 }
 
 //---------- Name ---------
+.form__name {
+  padding-bottom: 45px;
+}
 
 .form__name .form__field-name {
-  margin-bottom: 16px;
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.form__name .form__field:nth-child(3) {
+  margin-bottom: 0;
 }
 
 .form__name .form__field-input {
@@ -68,8 +77,8 @@
 }
 
 .form__name .form__field {
-  margin-bottom: 25px;
-  padding-bottom: 30px;
+  margin-bottom: 23px;
+  padding-bottom: 0;
 }
 .form__name .form__field:nth-child(3) {
   margin-bottom: 0;
@@ -85,18 +94,71 @@
   text-align: center;
 }
 
-.form__selection-name {
-  display: inline-block;
-  vertical-align: top;
+.form__progress {
+  position: relative;
+  display: flex;
+  align-items: center;
   width: 100%;
-  padding-left: 70px;
+  padding-left: 80px;
+  min-height: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.form__progress-name::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: solid 2px #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.form__progress-name::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  top: 0;
+  left: 0;
+  background: url("../img/icon-yes-red.svg") center center no-repeat;
+  z-index: 1000;
+}
+
+.form__progress-name {
+  width: 100%;
   font-size: 18px;
   font-weight: 400;
   color: $font-color-darkgrey;
-  margin-bottom: 63px;
   box-sizing: border-box;
 }
 
+.form__progress:hover .form__selection-name:before {
+  border: solid 2px $font-color-darkgrey;
+}
+
+
+.form__progress:active .form__progress-name:before {
+  border: solid 2px $bg-color-red;
+}
+
+.form__progress-input:checked ~ .form__progress-name[for="selfie"]::after,
+.form__progress-input:checked ~ .form__progress-name[for="beach"]::after,
+.form__progress-input:checked ~ .form__progress-name[for="noris"]::after,
+.form__progress-input:checked ~ .form__progress-name[for="souvenirs"]::after,
+.form__progress-input:checked ~ .form__progress-name[for="tower"]::after,
+.form__progress-input:checked ~ .form__progress-name[for="hotel"]::after {
+  display: block;
+}
+
+.form__progress-input:not(:checked) ~ .form__progress-name[for="selfie"]::after,.form__progress-input:not(:checked) ~ .form__selection-name[for="beach"]::after,.form__progress-input:not(:checked) ~ .form__progress-name[for="noris"]::after,.form__progress-input:not(:checked) ~ .form__progress-name[for="souvenirs"]::after,.form__progress-input:not(:checked) ~ .form__progress-name[for="tower"]::after,.form__progress-input:not(:checked) ~ .form__progress-name[for="hotel"]::after {
+  background: none;
+}
 //---------- Contacts ---------
 
 .form__contacts {
