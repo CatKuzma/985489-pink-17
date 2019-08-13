@@ -1,4 +1,5 @@
 .form {
+  margin: 0 auto;
   padding-top: 45px;
 }
 
@@ -16,15 +17,19 @@
   box-sizing: border-box;
 }
 
-.form-box {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
-  padding-left: 22px;
-  padding-right: 22px;
-  border: none;
-  box-sizing: border-box;
+.text-visible {
+  display: none;
 }
+
+//.form-box {
+//  width: 320px;
+//  margin: 0 auto;
+//  padding: 0;
+//  padding-left: 22px;
+//  padding-right: 22px;
+//  border: none;
+//  box-sizing: border-box;
+//}
 
 .form__name {
   display: flex;
@@ -48,257 +53,14 @@
   width: 100%;
 }
 
-.fieldset-wrapper {
+.doit-wrapper,
+.apps-wrapper {
   background-color: $bg-color-lightgrey;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
 }
 
-//---------- Name ---------
-.form__name {
-  padding-bottom: 45px;
-}
 
-.form__name .form__field-name {
-  padding-left: 20px;
-  margin-bottom: 12px;
-}
-
-.form__name .form__field:nth-child(3) {
-  margin-bottom: 0;
-}
-
-.form__name .form__field-input {
-  height: 59px;
-  padding-left: 20px;
-  font-size: 18px;
-  font-weight: 400;
-  box-sizing: border-box;
-}
-
-.form__name .form__field {
-  margin-bottom: 23px;
-  padding-bottom: 0;
-}
-.form__name .form__field:nth-child(3) {
-  margin-bottom: 0;
-}
-
-//---------- CheckBoxes ---------
-
-.form__doit {
-  width: $mobile-width;
-  margin: 0 auto;
-}
-
-.form__progress-title {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 41px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-
-.form__progress {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding-left: 75px;
-  min-height: 35px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  box-sizing: border-box;
-}
-
-.form__progress-name::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 35px;
-  height: 35px;
-  border: solid 2px #e5e5e5;
-  background-color: #ffffff;
-  border-radius: 4px;
-  box-sizing: border-box;
-  z-index: 100;
-}
-
-.form__progress-name::after {
-  position: absolute;
-  content: "";
-  width: 35px;
-  height: 35px;
-  top: 0;
-  left: 0;
-  background: url("../img/icon-yes-red.svg") center center no-repeat;
-  z-index: 1000;
-}
-
-.form__progress-name {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  font-size: 18px;
-  font-weight: 400;
-  color: $font-color-darkgrey;
-  box-sizing: border-box;
-}
-
-.form__progress:hover .form__progress-name::before {
-  border: solid 2px $font-color-darkgrey;
-}
-
-
-.form__progress:active .form__progress-name::before {
-  border: solid 2px $bg-color-red;
-}
-
-.form__progress-input:checked ~ .form__progress-name[for="selfie"]::after,
-.form__progress-input:checked ~ .form__progress-name[for="beach"]::after,
-.form__progress-input:checked ~ .form__progress-name[for="noris"]::after,
-.form__progress-input:checked ~ .form__progress-name[for="souvenirs"]::after,
-.form__progress-input:checked ~ .form__progress-name[for="tower"]::after,
-.form__progress-input:checked ~ .form__progress-name[for="hotel"]::after {
-  display: block;
-}
-
-.form__progress-input:not(:checked) ~ .form__progress-name[for="selfie"]::after,
-.form__progress-input:not(:checked) ~ .form__progress-name[for="beach"]::after,
-.form__progress-input:not(:checked) ~ .form__progress-name[for="noris"]::after,
-.form__progress-input:not(:checked) ~ .form__progress-name[for="souvenirs"]::after,
-.form__progress-input:not(:checked) ~ .form__progress-name[for="tower"]::after,
-.form__progress-input:not(:checked) ~ .form__progress-name[for="hotel"]::after {
-  background: none;
-}
-//---------- Contacts ---------
-
-.form__contacts {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.form__contacts .form__field:nth-child(1) {
-  margin-bottom: 25px;
-}
-
-.form__contacts .form__field-name {
-  margin-bottom: 16px;
-}
-
-.form__contacts .form__field-input {
-  height: 59px;
-  padding-left: 20px;
-  font-size: 18px;
-  font-weight: 400;
-  box-sizing: border-box;
-}
-
-//---------- Radio Buttons ---------
-
-.form__apps {
-  padding-top: 40px;
-}
-
-.form__apps-title {
-  padding-top: 30px;
-  text-align: center;
-}
-
-.form__selection {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding-left: 80px;
-  min-height: 37px;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.form__selection-name::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 37px;
-  height: 37px;
-  border: solid 2px #e5e5e5;
-  background-color: #ffffff;
-  border-radius: 50%;
-  box-sizing: border-box;
-  z-index: 100;
-}
-
-.form__selection-name::after {
-  display: none;
-  position: absolute;
-  content: "";
-  top: 11px;
-  left: 11px;
-  width: 15px;
-  height: 15px;
-  background-color: $bg-color-red;
-  border-radius: 50%;
-  box-sizing: border-box;
-  z-index: 1000;
-}
-
-.form__selection-name {
-  width: 100%;
-  font-size: 18px;
-  font-weight: 400;
-  color: $font-color-darkgrey;
-  box-sizing: border-box;
-}
-
-.form__selection:hover .form__selection-name:before {
-  border: solid 2px $font-color-darkgrey;
-}
-
-
-.form__selection:active .form__selection-name:before {
-  border: solid 2px $bg-color-red;
-}
-
-.form__selection-input:checked ~ .form__selection-name[for="ios"]::after,
-.form__selection-input:checked ~ .form__selection-name[for="android"]::after,
-.form__selection-input:checked ~ .form__selection-name[for="windows"]::after {
-  display: block;
-}
-
-.form__selection-input:not(:checked) ~ .form__selection-name[for="ios"]::after,.form__selection-input:not(:checked) ~ .form__selection-name[for="android"]::after,.form__selection-input:not(:checked) ~ .form__selection-name[for="windows"]::after {
-  background: none;
-}
-
-//---------- Textarea ----------
-
-.form__emotion {
-  margin: 0 auto;
-  width: 320px;
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  box-sizing: border-box;
-}
-
-.form__emotion-title {
-  padding-top: 30px;
-  text-align: center;
-}
-
-.form__emotion-text {
-  width: 276px;
-  height: 197px;
-  padding-left: 19px;
-  padding-top: 19px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.67;
-  box-sizing: border-box;
-}
 
 //----------- Form - Button ---------
 
@@ -340,4 +102,53 @@
 
 .red-star {
   color: $font-color-red;
+}
+
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: $tablet-width;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__name {
+    order: 1;
+  }
+
+  .doit-wrapper {
+    order: 4;
+  }
+
+  .form__contacts {
+    order: 3;
+  }
+
+  .apps-wrapper {
+    order: 2;
+  }
+
+  .form__emotion {
+    order: 5;
+  }
+
+  .form-button {
+    order: 6;
+  }
+
+  .form__title {
+    width: $tablet-width;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 100px;
+    font-size: 18px;
+  }
+
+  .text-visible {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }

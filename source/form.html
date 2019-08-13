@@ -70,11 +70,11 @@
   </div>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <div class="container form__title">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="text-visible">Пожалуйста, заполните форму ниже:</span>
       </div>
 
 
-      <fieldset class="form-box form__name">
+      <fieldset class="form__name">
         <div class="form__field">
           <label class="form__field-name" for="second" tabindex="0">Фамилия:</label>
           <input class="form__field-input" type="text" id="second" name="second-name" placeholder="Укажите фамилию *" aria-label="Фамилия" required></div>
@@ -87,12 +87,12 @@
       </fieldset>
 
 
-      <div class="fieldset-wrapper">
-        <fieldset class="form-box form__doit">
+      <div class="doit-wrapper">
+        <fieldset class="form__doit">
           <legend class="form__field-name form__progress-title">Ваши безбашенные достижения в путешествии</legend>
           <div class="form__progress">
             <input class="form__progress-input visually-hidden" type="checkbox" id="selfie" name="selfie" value="selfie" checked>
-            <label class="form__progress-name" for="selfie" tabindex="0">Сделал селфи с акулой</label>
+            <label class="form__progress-name" for="selfie">Сделал селфи с акулой</label>
           </div>
           <div class="form__progress">
             <input class="form__progress-input visually-hidden" type="checkbox" id="beach" name="beach" value="beach" checked>
@@ -117,7 +117,7 @@
         </fieldset>
       </div>
 
-      <fieldset class="form-box form__contacts">
+      <fieldset class="form__contacts">
         <div class="form__field">
           <label class="form__field-name" for="phone" tabindex="0">Номер телефона</label>
           <input class="form__field-input" type="tel" id="phone" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Номер телефона">
@@ -128,9 +128,8 @@
         </div>
       </fieldset>
 
-
-      <div class="fieldset-wrapper">
-        <fieldset class="form-box form__apps">
+      <div class="apps-wrapper">
+        <fieldset class="form__apps">
           <legend class="form__field-name form__apps-title">С каким приложением путешествовали?</legend>
           <div class="form__selection">
             <input class="form__selection-input visually-hidden" type="radio" id="ios" name="apps" value="ios" checked>
@@ -147,7 +146,7 @@
         </fieldset>
       </div>
 
-      <fieldset class="form-box form__emotion">
+      <fieldset class="form__emotion">
         <legend class="form__field-name form__emotion-title">Опишите свои эмоции:</legend>
         <textarea class="form__emotion-text" name="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях" id="emotion" cols="40" rows="10"></textarea>
       </fieldset>

@@ -1,0 +1,98 @@
+.form__apps {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: none;
+  box-sizing: border-box;
+  padding-top: 40px;
+}
+
+.form__apps-title {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.form__selection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 80px;
+  min-height: 37px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.form__selection-name::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  border: solid 2px #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.form__selection-name::after {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: 11px;
+  width: 15px;
+  height: 15px;
+  background-color: $bg-color-red;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.form__selection-name {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  color: $font-color-darkgrey;
+  box-sizing: border-box;
+}
+
+.form__selection:hover .form__selection-name:before {
+  border: solid 2px $font-color-darkgrey;
+}
+
+
+.form__selection:active .form__selection-name:before {
+  border: solid 2px $bg-color-red;
+}
+
+.form__selection-input:checked ~ .form__selection-name[for="ios"]::after,
+.form__selection-input:checked ~ .form__selection-name[for="android"]::after,
+.form__selection-input:checked ~ .form__selection-name[for="windows"]::after {
+  display: block;
+}
+
+.form__selection-input:not(:checked) ~ .form__selection-name[for="ios"]::after,.form__selection-input:not(:checked) ~ .form__selection-name[for="android"]::after,.form__selection-input:not(:checked) ~ .form__selection-name[for="windows"]::after {
+  background: none;
+}
+
+@media (min-width: $tablet-width) {
+  //.apps-wrapper {
+  //
+  //  margin: 0 auto;
+  //  background-color: #ffffff;
+  //}
+
+  .form__apps {
+    width: $tablet-width;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

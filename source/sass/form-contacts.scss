@@ -1,0 +1,35 @@
+.form__contacts {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: none;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.form__contacts .form__field:nth-child(1) {
+  margin-bottom: 25px;
+}
+
+.form__contacts .form__field-name {
+  margin-bottom: 16px;
+}
+
+.form__contacts .form__field-input {
+  height: 59px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+
+}
