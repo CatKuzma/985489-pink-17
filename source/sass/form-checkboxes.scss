@@ -1,3 +1,4 @@
+
 .form__doit {
   width: $mobile-width;
   margin: 0 auto;
@@ -92,9 +93,66 @@
 }
 
 @media (min-width: $tablet-width) {
+  .doit-wrapper {
+    width: 100%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
 
+  .form__doit {
+    margin: 0;
+    padding: 0;
+    padding-left: 60px;
+    padding-right: 0;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+
+  .form__progress-title {
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .form__progress {
+    width: 100%;
+    padding-left: 75px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .form__progress {
+    width: 33%;
+    padding-left: 75px;
+  }
 
+  .form__progress:nth-child(1) {
+    order: 1;
+  }
+
+  .form__progress:nth-child(2) {
+    order: 4;
+  }
+
+  .form__progress:nth-child(3) {
+    order: 2;
+  }
+
+  .form__progress:nth-child(4) {
+    order: 5;
+  }
+
+  .form__progress:nth-child(5) {
+    order: 3;
+  }
+
+  .form__progress:nth-child(6) {
+    order: 6;
+  }
 }

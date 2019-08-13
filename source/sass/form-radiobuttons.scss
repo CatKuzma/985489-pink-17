@@ -81,18 +81,34 @@
 }
 
 @media (min-width: $tablet-width) {
-  //.apps-wrapper {
-  //
-  //  margin: 0 auto;
-  //  background-color: #ffffff;
-  //}
+  .apps-wrapper {
+    width: 100%;
+    background-color: #ffffff;
+  }
 
   .form__apps {
-    width: $tablet-width;
+    width: 100%;
     margin-left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .apps-wrapper {
+    width: 430px;
+    background-color: yellow;
+  }
 
+  .form__apps {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 1px solid black;
+  }
+
+  .form__apps-title {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
 }

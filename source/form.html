@@ -90,42 +90,50 @@
       <div class="doit-wrapper">
         <fieldset class="form__doit">
           <legend class="form__field-name form__progress-title">Ваши безбашенные достижения в путешествии</legend>
-          <div class="form__progress">
-            <input class="form__progress-input visually-hidden" type="checkbox" id="selfie" name="selfie" value="selfie" checked>
-            <label class="form__progress-name" for="selfie">Сделал селфи с акулой</label>
+          <div class="flexbox-container">
+            <div class="form__progress">
+              <input class="form__progress-input visually-hidden" type="checkbox" id="selfie" name="selfie" value="selfie" checked>
+              <label class="form__progress-name" for="selfie">Сделал селфи с акулой</label>
+            </div>
+            <div class="form__progress">
+              <input class="form__progress-input visually-hidden" type="checkbox" id="beach" name="beach" value="beach" checked>
+              <label class="form__progress-name" for="beach" tabindex="0">Обгорел на пляже</label>
+            </div>
+            <div class="form__progress">
+              <input class="form__progress-input visually-hidden" type="checkbox" id="noris" name="noris" value="noris">
+              <label class="form__progress-name" for="noris" tabindex="0">Видел Чака Норриса</label>
+            </div>
+            <div class="form__progress">
+              <input class="form__progress-input visually-hidden" type="checkbox" id="souvenirs" name="souvenirs" value="souvenirs">
+              <label class="form__progress-name" for="souvenirs" tabindex="0">Накупил сувениров</label>
+            </div>
+            <div class="form__progress">
+              <input class="form__progress-input visually-hidden" type="checkbox" id="tower" name="tower" value="tower" checked>
+              <label class="form__progress-name" for="tower" tabindex="0">Удержал башню</label>
+            </div>
+            <div class="form__progress">
+              <input class="form__progress-input visually-hidden" type="checkbox" id="hotel" name="hotel" value="hotel">
+              <label class="form__progress-name" for="hotel" tabindex="0">Разгромил отель</label>
+            </div>
           </div>
-          <div class="form__progress">
-            <input class="form__progress-input visually-hidden" type="checkbox" id="beach" name="beach" value="beach" checked>
-            <label class="form__progress-name" for="beach" tabindex="0">Обгорел на пляже</label>
-          </div>
-          <div class="form__progress">
-            <input class="form__progress-input visually-hidden" type="checkbox" id="noris" name="noris" value="noris">
-            <label class="form__progress-name" for="noris" tabindex="0">Видел Чака Норриса</label>
-          </div>
-          <div class="form__progress">
-            <input class="form__progress-input visually-hidden" type="checkbox" id="souvenirs" name="souvenirs" value="souvenirs">
-            <label class="form__progress-name" for="souvenirs" tabindex="0">Накупил сувениров</label>
-          </div>
-          <div class="form__progress">
-            <input class="form__progress-input visually-hidden" type="checkbox" id="tower" name="tower" value="tower" checked>
-            <label class="form__progress-name" for="tower" tabindex="0">Удержал башню</label>
-          </div>
-          <div class="form__progress">
-            <input class="form__progress-input visually-hidden" type="checkbox" id="hotel" name="hotel" value="hotel">
-            <label class="form__progress-name" for="hotel" tabindex="0">Разгромил отель</label>
-          </div>
+
         </fieldset>
       </div>
 
       <fieldset class="form__contacts">
-        <div class="form__field">
-          <label class="form__field-name" for="phone" tabindex="0">Номер телефона</label>
-          <input class="form__field-input" type="tel" id="phone" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Номер телефона">
+        <legend class="form__field-name form__contacts-title">Контактная информация</legend>
+        <div class="flexbox-container">
+          <div class="form__field">
+            <label class="form__field-name" for="phone" tabindex="0">Номер телефона</label>
+            <input class="form__field-input" type="tel" id="phone" name="phone-number" placeholder="Номер, пожалуйста" aria-label="Номер телефона">
+          </div>
+          <div class="form__field">
+            <label class="form__field-name" for="first" tabindex="0">Адрес почты</label>
+            <input class="form__field-input" type="email" id="email" name="email" placeholder="Введите почту *" aria-label="Почта" required>
+          </div>
         </div>
-        <div class="form__field">
-          <label class="form__field-name" for="first" tabindex="0">Введите почту*</label>
-          <input class="form__field-input" type="email" id="email" name="email" placeholder="Введите почту *" aria-label="Почта" required>
-        </div>
+
+
       </fieldset>
 
       <div class="apps-wrapper">

@@ -21,16 +21,6 @@
   display: none;
 }
 
-//.form-box {
-//  width: 320px;
-//  margin: 0 auto;
-//  padding: 0;
-//  padding-left: 22px;
-//  padding-right: 22px;
-//  border: none;
-//  box-sizing: border-box;
-//}
-
 .form__name {
   display: flex;
   flex-wrap: wrap;
@@ -59,8 +49,6 @@
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
 }
-
-
 
 //----------- Form - Button ---------
 
@@ -110,6 +98,9 @@
     width: $tablet-width;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 22px;
+    padding-right: 22px;
+    box-sizing: border-box;
   }
 
   .form__name {
@@ -138,8 +129,8 @@
 
   .form__title {
     width: $tablet-width;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
     margin-bottom: 100px;
     font-size: 18px;
   }
@@ -147,8 +138,37 @@
   .text-visible {
     display: block;
   }
+
+  .form-button {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form__btn {
+    width: 296px;
+    min-height: 59px;
+  }
+
+  .form-note {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    width: $desktop-width;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 }
