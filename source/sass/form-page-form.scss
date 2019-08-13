@@ -123,10 +123,6 @@
     order: 5;
   }
 
-  .form-button {
-    order: 6;
-  }
-
   .form__title {
     width: $tablet-width;
     padding-left: 60px;
@@ -145,6 +141,7 @@
     justify-content: space-between;
     padding-left: 0;
     padding-right: 0;
+    order: 6;
   }
 
   .form__btn {
@@ -170,5 +167,4 @@
     display: flex;
     flex-wrap: wrap;
   }
-
 }

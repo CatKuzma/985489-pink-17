@@ -61,12 +61,12 @@
   box-sizing: border-box;
 }
 
-.form__selection:hover .form__selection-name:before {
+.form__selection:hover .form__selection-name::before {
   border: solid 2px $font-color-darkgrey;
 }
 
 
-.form__selection:active .form__selection-name:before {
+.form__selection:active .form__selection-name::before {
   border: solid 2px $bg-color-red;
 }
 
@@ -76,7 +76,9 @@
   display: block;
 }
 
-.form__selection-input:not(:checked) ~ .form__selection-name[for="ios"]::after,.form__selection-input:not(:checked) ~ .form__selection-name[for="android"]::after,.form__selection-input:not(:checked) ~ .form__selection-name[for="windows"]::after {
+.form__selection-input:not(:checked) ~ .form__selection-name[for="ios"]::after,
+.form__selection-input:not(:checked) ~ .form__selection-name[for="android"]::after,
+.form__selection-input:not(:checked) ~ .form__selection-name[for="windows"]::after {
   background: none;
 }
 
