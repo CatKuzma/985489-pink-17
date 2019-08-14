@@ -142,21 +142,6 @@
   text-transform: uppercase;
 }
 
-.download-photo__header {
-  display: block;
-  width: 100%;
-  min-height: 175px;
-  margin: 0;
-  padding-bottom: 0;
-  padding-top: 50px;
-  padding-left: 40px;
-  padding-right: 39px;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 400;
-  text-align: center;
-  box-sizing: border-box;
-}
 
 @media (min-width: $tablet-width) {
   .gallery__title {

@@ -1,0 +1,112 @@
+.success-popup {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 44px;
+  box-sizing: border-box;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  background-color: #ffffff;
+}
+
+.success-popup__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33;
+  text-align: center;
+  color: #000000;
+}
+
+.success-popup__text {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+  color: $font-color-darkgrey;
+}
+
+.success-popup__btn-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $bg-color-lightgrey;
+}
+
+.success-popup__btn-wrapper .form__btn {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .br-text--mobile {
+    display: none;
+  }
+
+  .success-popup {
+    width: 460px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .success-popup__title {
+    margin-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 30px;
+  }
+
+  .success-popup__btn-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+  }
+
+  .success-popup__text {
+    padding: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 30px;
+    line-height: 1.43;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .success-popup {
+    width: 780px;
+    padding-top: 45px;
+  }
+
+  .success-popup__title {
+    margin-bottom: 20px;
+  }
+
+  .success-popup__text {
+    padding: 0;
+    padding-left: 190px;
+    padding-right: 190px;
+    margin-bottom: 40px;
+    line-height: 1.47;
+    font-size: 18px;
+  }
+
+  .success-popup__btn-wrapper {
+    padding-top: 49px;
+    padding-bottom: 55px;
+    padding-left: 160px;
+    padding-right: 160px;
+    background-color: $bg-color-lightgrey;
+  }
+
+  //.success-popup__btn-wrapper .form__btn {
+  //  width: 100%;
+  //}
+}

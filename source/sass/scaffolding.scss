@@ -29,9 +29,11 @@ $color-white: #ffffff;
 $color-black: #000000;
 $font-color-darkgrey: #283645;
 $font-color-red: #d22856;
+$table-border: #e9e9e9;
 $mobile-width: 320px;
 $tablet-width: 660px;
 $desktop-width: 960px;
+$border-lightgrey:  rgba(40, 54, 69, 0.1);
 
 
 body {
@@ -81,6 +83,7 @@ img {
 .flex-wrapper {
   display: flex;
 }
+
 
 @media (min-width: $tablet-width) {
   .container {

@@ -1,0 +1,158 @@
+
+.form__doit {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.form__progress-title {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 41px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+
+.form__progress {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 75px;
+  min-height: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.form__progress-name::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: solid 2px #e5e5e5;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.form__progress-name::after {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  top: 0;
+  left: 0;
+  background: url("../img/icon-yes-red.svg") center center no-repeat;
+  z-index: 1000;
+}
+
+.form__progress-name {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  color: $font-color-darkgrey;
+  box-sizing: border-box;
+}
+
+.form__progress:hover .form__progress-name::before {
+  border: solid 2px $font-color-darkgrey;
+}
+
+
+.form__progress:active .form__progress-name::before {
+  border: solid 2px $bg-color-red;
+}
+
+.form__progress-input:checked ~ .form__progress-name[for="selfie"]::after,
+.form__progress-input:checked ~ .form__progress-name[for="beach"]::after,
+.form__progress-input:checked ~ .form__progress-name[for="noris"]::after,
+.form__progress-input:checked ~ .form__progress-name[for="souvenirs"]::after,
+.form__progress-input:checked ~ .form__progress-name[for="tower"]::after,
+.form__progress-input:checked ~ .form__progress-name[for="hotel"]::after {
+  display: block;
+}
+
+.form__progress-input:not(:checked) ~ .form__progress-name[for="selfie"]::after,
+.form__progress-input:not(:checked) ~ .form__progress-name[for="beach"]::after,
+.form__progress-input:not(:checked) ~ .form__progress-name[for="noris"]::after,
+.form__progress-input:not(:checked) ~ .form__progress-name[for="souvenirs"]::after,
+.form__progress-input:not(:checked) ~ .form__progress-name[for="tower"]::after,
+.form__progress-input:not(:checked) ~ .form__progress-name[for="hotel"]::after {
+  background: none;
+}
+
+@media (min-width: $tablet-width) {
+  .doit-wrapper {
+    width: 100%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+  }
+
+  .form__doit {
+    margin: 0;
+    padding: 0;
+    padding-left: 60px;
+    padding-right: 0;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+
+  .form__progress-title {
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .form__progress {
+    width: 100%;
+    padding-left: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__progress {
+    width: 33%;
+    padding-left: 75px;
+  }
+
+  .form__progress:nth-child(1) {
+    order: 1;
+  }
+
+  .form__progress:nth-child(2) {
+    order: 4;
+  }
+
+  .form__progress:nth-child(3) {
+    order: 2;
+  }
+
+  .form__progress:nth-child(4) {
+    order: 5;
+  }
+
+  .form__progress:nth-child(5) {
+    order: 3;
+  }
+
+  .form__progress:nth-child(6) {
+    order: 6;
+  }
+}

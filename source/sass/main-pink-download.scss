@@ -6,11 +6,9 @@
   box-sizing: border-box;
 }
 
-.download__btn {
+.pink-app__btn {
   display: inline-block;
   vertical-align: top;
-  width: 281px;
-  min-height: 55px;
   padding-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -18,12 +16,15 @@
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  color: $color-white;
   text-decoration: none;
   line-height: 24px;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 281px;
+  min-height: 55px;
+  color: $color-white;
   border: solid 3px $color-white;
   border-radius: 55px;
-  box-sizing: border-box;
 }
 
 .download__icons {
@@ -56,7 +57,7 @@
     background-color: transparent;
   }
 
-  .download__btn {
+  .pink-app__btn {
     width: 300px;
     margin-bottom: 43px;
   }
@@ -85,7 +86,7 @@
     left: 10px;
   }
 
-  .download__btn {
+  .pink-app__btn {
     font-size: 21px;
     margin-bottom: 70px;
   }
