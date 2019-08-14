@@ -131,8 +131,8 @@
     font-size: 18px;
   }
 
-  .text-visible {
-    display: block;
+  .form__title .text-visible {
+    display: inline-block;
   }
 
   .form-button {
@@ -163,8 +163,22 @@
     padding-right: 10px;
   }
 
+  .form__title {
+    width: $desktop-width;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
   .flexbox-container {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .form-note {
+    display: flex;
+  }
+
+  .form-note .text-visible {
+    display: block;
   }
 }
