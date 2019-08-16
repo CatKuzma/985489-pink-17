@@ -1,13 +1,14 @@
 .footer {
-  padding-top: 40px;
+  padding-top: 55px;
   padding-left: 70px;
   padding-right: 70px;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .footer-logo {
   text-align: center;
-  margin-bottom: 43px;
+  margin-bottom: 35px;
 }
 
 .big-image--show {
@@ -27,7 +28,7 @@
 }
 
 .social {
-  margin-bottom: 41px;
+  margin-bottom: 31px;
 }
 
 .social-button {
@@ -46,6 +47,10 @@
   border: solid 3px $font-color-darkgrey;
 }
 
+.social-button:active {
+  opacity: 0.1;
+}
+
 .social-button__image g,
 .social-button__image path,
 .footer__produce-icon path {
@@ -53,16 +58,36 @@
 }
 
 .footer__produce {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
   vertical-align: top;
-  min-width: 30px;
-  height: 34px;
-  margin-bottom: 40px;
+  width: 136px;
+  height: 51px;
 }
 
 .footer__produce-text {
   line-height: 34px;
   vertical-align: top;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer__produce-icon {
+  width: 40px;
+  height: 51px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__produce:hover .footer__produce-icon path {
+  fill: $font-color-darkgrey;
+}
+
+.footer__produce:active .footer__produce-icon {
+  fill: $font-color-darkgrey;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -76,28 +101,6 @@
 
   .social {
     width: 180px;
-  }
-
-  .footer__produce {
-    display: flex;
-    justify-content: space-between;
-    min-width: 150px;
-    min-height: 50px;
-    margin-bottom: 0;
-  }
-
-  .footer__produce-icon {
-    width: 27px;
-    height: 34px;
-  }
-
-  .footer__produce-icon:hover path {
-    fill: $font-color-darkgrey;
-  }
-
-  .footer__produce-icon:active path {
-    fill: $font-color-darkgrey;
-    opacity: 0.3;
   }
 }
 

@@ -5,6 +5,7 @@
   padding: 0;
   padding-left: 22px;
   padding-right: 22px;
+  padding-bottom: 40px;
   border: none;
   box-sizing: border-box;
 }
@@ -12,8 +13,8 @@
 .form__progress-title {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 41px;
-  padding-bottom: 50px;
+  padding-top: 36px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -23,11 +24,16 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding-left: 75px;
+  padding-left: 66px;
   min-height: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 48px;
   cursor: pointer;
   box-sizing: border-box;
+}
+
+.form__progress:nth-child(6) {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .form__progress-name::before {
@@ -35,8 +41,8 @@
   content: "";
   top: 0;
   left: 0;
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
   border: solid 2px #e5e5e5;
   background-color: #ffffff;
   border-radius: 4px;

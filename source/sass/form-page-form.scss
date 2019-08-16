@@ -17,6 +17,7 @@
   box-sizing: border-box;
 }
 
+
 .text-visible {
   display: none;
 }
@@ -55,6 +56,7 @@
 .form-button {
   padding-left: 22px;
   padding-right: 22px;
+  box-sizing: border-box;
 }
 
 .form__btn {
@@ -73,6 +75,13 @@
   border: none;
   background-color: #2aab6d;
   cursor: pointer;
+  box-sizing: border-box;
+}
+
+.form__btn--modifier {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 37px;
 }
 
 .form-note {
