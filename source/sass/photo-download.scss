@@ -51,20 +51,11 @@
   position: relative;
 }
 
-//.setting-scales {
-//  position: absolute;
-//  width: 240px;
-//  height: 2px;
-//  top: 60px;
-//  left: 20px;
-//  margin: 0 auto;
-//}
-
 .setting-scales__crop {
   width: 240px;
   height: 2px;
   position: absolute;
-   background-color: $font-color-darkgrey;
+  background-color: $font-color-darkgrey;
 }
 
 .setting-scales__crop::before,
@@ -131,22 +122,22 @@
 }
 
 @media (min-width: $tablet-width) {
-    .img-upload__form {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+  .img-upload__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    .img-upload__form-file {
-      width: 300px;
-      height: 400px;
-      margin-bottom: 0;
-    }
+  .img-upload__form-file {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 0;
+  }
 
-    .download-photo__image {
-      width: 300px;
-      height: 400px;
-    }
+  .download-photo__image {
+    width: 300px;
+    height: 400px;
+  }
 
   .form-settings {
     display: flex;
@@ -169,268 +160,37 @@
     width: 200px;
   }
 
-    .setting-scales__fill,
-    .setting-scales__contrast {
-      position: relative;
-      width: 200px;
-      height: 2px;
-      display: block;
-      background-color: $font-color-darkgrey;
-    }
+  .setting-scales__fill,
+  .setting-scales__contrast {
+    position: relative;
+    width: 200px;
+    height: 2px;
+    display: block;
+    background-color: $font-color-darkgrey;
+  }
 
-    .icon-crop {
-      width: 22px;
-      height: 22px;
-    }
+  .icon-crop {
+    width: 22px;
+    height: 22px;
+  }
 
-    .icon-fill {
-      width: 24px;
-      height: 22px;
-      fill: $bg-color-red;
+  .icon-fill {
+    width: 24px;
+    height: 22px;
+    fill: $bg-color-red;
+  }
 
-    }
+  .icon-contrast {
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+  }
 
-    .icon-contrast {
-      width: 16px;
-      height: 16px;
-      margin-left: 3px;
-    }
-
-  .icon-contrast path{
-fill: $bg-color-red;
+  .icon-contrast path {
+    fill: $bg-color-red;
   }
 }
 
-@media (min-width: $desktop-width) {
-
-}
-
-
-
-
-
-
-
-
-
-//------ Old Variant ----------
-
-
-
-//.download-photo {
-//  width: 100%;
-//  background-color: $color-white;
-//}
-//
-//.download-photo__header {
-//  margin: 0;
-//  padding: 0;
-//  font-size: 14px;
-//}
-//
-//.form-wrapper {
-//  width: 100%;
-//  padding-top: 30px;
-//  padding-bottom: 30px;
-//  background-color: $bg-color-lightgrey;
-//  box-sizing: border-box;
-//}
-//
-//.img-upload__form {
-//  width: 100%;
-//  padding-left: 20px;
-//  padding-right: 20px;
-//  box-sizing: border-box;
-//}
-//
-//.img-upload__form-file,
-//.img-upload__form-settings {
-//  margin: 0;
-//  padding: 0;
-//  border: none;
-//}
-//
-//.img-upload__form-file {
-//  width: 280px;
-//  height: 374px;
-//  margin-bottom: 30px;
-//}
-//
-//.img-upload__form-settings {
-//  width: 280px;
-//  box-sizing: border-box;
-//  margin-bottom: 30px;
-//}
-//
-//.form-settings {
-//  align-items: center;
-//}
-//
-//.setting-scales {
-//  width: 240px;
-//  margin: 0 auto;
-//  margin-bottom: 30px;
-//}
-//
-//
-//.setting-scales__crop,
-//.setting-scales__fill,
-//.setting-scales__contrast {
-//  margin: 0 auto;
-//  position: relative;
-//  width: 100%;
-//  height: 2px;
-//  background-color: $font-color-darkgrey;
-//}
-//
-//.setting-scales__crop::before,
-//.setting-scales__fill::before,
-//.setting-scales__contrast::before {
-//  position: absolute;
-//  content: "";
-//  top: -8px;
-//  left: 70%;
-//  width: 15px;
-//  height: 15px;
-//  border: 2px solid $bg-color-red;
-//  border-radius: 50%;
-//  background-color: $color-white;
-//}
-//
-//.setting-scales__fill,
-//.setting-scales__contrast {
-//  display: none;
-//}
-//
-//.download-photo__buttons {
-//  width: 100%;
-//}
-//
-//.icon-crop {
-//  fill: $bg-color-red;
-//}
-//
-//.icon-fill,
-//.icon-contrast path {
-//  fill: $border-lightgrey;
-//}
-//
-//.download-photo__btn {
-//  width: 100%;
-//  display: inline-block;
-//  vertical-align: top;
-//  padding-top: 10px;
-//  padding-left: 15px;
-//  padding-right: 15px;
-//  padding-bottom: 9px;
-//  font-size: 18px;
-//  font-weight: 700;
-//  text-align: center;
-//  text-decoration: none;
-//  line-height: 24px;
-//  box-sizing: border-box;
-//  cursor: pointer;
-//  min-height: 55px;
-//  background: none;
-//  border-radius: 55px;
-//}
-//
-//.post-btn {
-//  color: $bg-color-red;
-//  border: solid 3px $bg-color-red;
-//  margin-bottom: 20px;
-//}
-//
-//.cancel-btn {
-//  color: $border-lightgrey;
-//  border: solid 3px $border-lightgrey;
-//}
-//
-//@media (min-width: $tablet-width) {
-//  .img-upload__form {
-//    display: flex;
-//    flex-wrap: wrap;
-//  }
-//
-//  .img-upload__form-file {
-//    width: 300px;
-//    height: 400px;
-//    margin-bottom: 0;
-//  }
-//
-//  .download-photo__image {
-//    width: 300px;
-//    height: 400px;
-//  }
-//
-//  .setting-wrapper {
-//    width: 260px;
-//    display: flex;
-//    flex-wrap: wrap;
-//    margin: 0 auto;
-//  }
-//
-//  .form-settings {
-//    width: 30px;
-//    align-self: flex-start;
-//    flex-wrap: wrap;
-//  }
-//
-//  .scales-wrapper {
-//    display: flex;
-//  }
-//  .icon-crop {
-//    width: 22px;
-//    height: 22px;
-//  }
-//
-//  .icon-fill {
-//    width: 24px;
-//    height: 22px;
-//    fill: $bg-color-red;
-//
-//  }
-//
-//  .icon-contrast {
-//    width: 16px;
-//    height: 16px;
-//    margin-left: 3px;
-//  }
-//
-//
-//  .icon-contrast path {
-//    fill: $bg-color-red;
-//  }
-//
-//  .setting__crop {
-//    margin-bottom: 50px;
-//  }
-//
-//  .setting__fill {
-//    margin-bottom: 50px;
-//  }
-//  .setting-scales {
-//    width: 200px;
-//    margin-bottom: 0;
-//    padding-top: 10px;
-//  }
-//
-//  .download-photo__buttons {
-//    width: 100%;
-//    margin-top: auto;
-//  }
-//
-//  .setting-scales__crop,
-//  .setting-scales__fill {
-//    margin-bottom: 75px;
-//  }
-//
-//  .setting-scales__fill,
-//  .setting-scales__contrast {
-//    display: block;
-//  }
-//}
-//
 //@media (min-width: $desktop-width) {
 //
 //}
