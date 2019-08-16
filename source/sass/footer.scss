@@ -15,24 +15,16 @@
 }
 
 .footer-logo:hover .logo-text--color {
-fill: $font-color-red;
+  fill: $font-color-red;
 }
 
 .footer-logo:active {
   opacity: 0.3;
 }
+
 .footer-logo:active .logo-text--color {
   fill: $bg-color-darkblue;
 }
-//.footer-logo:active svg g path {
-//  fill: $bg-color-darkblue;
-//  opacity: 0.3;
-//}
-//
-//.footer-logo:active svg path {
-//  fill: $font-color-red;
-//  opacity: 0.3;
-//}
 
 .social {
   margin-bottom: 41px;
@@ -122,5 +114,4 @@ fill: $font-color-red;
   .big-image--show {
     display: block;
   }
-
 }
