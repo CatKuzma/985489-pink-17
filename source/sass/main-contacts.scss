@@ -48,6 +48,17 @@
   margin-bottom: 25px;
 }
 
+.contacts-list__item-link:hover {
+  color: $font-color-darkgrey;
+  text-decoration: underline $font-color-darkgrey;
+}
+
+.contacts-list__item-link:active {
+  color: $font-color-darkgrey;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
 @media (min-width: $tablet-width) {
   .contacts .container {
     padding-bottom: 15px;

@@ -8,16 +8,13 @@
 }
 
 
-.header-logo__link:hover svg,
-.header-logo__link:hover svg path,
-.header-logo__link:hover svg g {
+.header-logo:hover svg path {
   fill: red;
 }
 
-.header-logo:hover svg,
-.header-logo:hover svg path,
-.header-logo:hover svg g {
-  fill: red;
+.header-logo:active svg path {
+  fill: $color-white;
+  opacity: 0.3;
 }
 
 .gallery-item__image {
