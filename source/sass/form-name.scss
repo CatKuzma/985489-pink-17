@@ -64,5 +64,24 @@
 @media (min-width: $desktop-width) {
   .form__name {
     width: 50%;
+    padding: 0;
+    padding-top: 15px;
+    padding-right: 35px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .form__name .form__field {
+    margin-bottom: 55px;
+  }
+
+  .form__name .form__field-name {
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .form__name .form__field-input {
+    height: 61px;
   }
 }

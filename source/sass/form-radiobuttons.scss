@@ -100,7 +100,7 @@
     margin-left: 0;
     padding-top: 43px;
     padding-left: 60px;
-    border: 1px solid $border-lightgrey;
+    border: 2px solid $border-lightgrey;
     padding-bottom: 57px;
     margin-bottom: 57px;
   }
@@ -126,20 +126,30 @@
 
 @media (min-width: $desktop-width) {
   .apps-wrapper {
-    width: 430px;
+    padding-top: 0;
+    width: 435px;
     margin-left: auto;
   }
 
   .form__apps {
     width: 100%;
     margin-left: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    border: 1px solid black;
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 55px;
+    border: 2px solid $border-lightgrey;
   }
 
   .form__apps-title {
-    padding-top: 0;
+    width: 100%;
     text-align: center;
+  }
+
+  .form__apps .form__selection {
+    margin-left: 47px;
+    margin-bottom: 37px;
+    padding-left: 58px;
+    box-sizing: border-box;
   }
 }
