@@ -197,6 +197,7 @@
     width: $desktop-width;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: yellow;
   }
 
   .form__title {
@@ -214,6 +215,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+  }
+
+  .form-button {
+    justify-content: space-between;
   }
 
   .form-note {

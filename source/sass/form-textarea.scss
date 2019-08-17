@@ -55,6 +55,16 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-//
-//}
+@media (min-width: $desktop-width) {
+  .form__emotion {
+    margin-bottom: 55px;
+  }
+
+  .form__emotion-text {
+    width: 100%;
+    height: 130px;
+    padding: 0;
+    padding-left: 19px;
+    padding-top: 15px;
+  }
+}

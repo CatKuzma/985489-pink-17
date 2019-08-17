@@ -65,6 +65,7 @@
 
   .form__contacts .form__field-input {
     order: 1;
+    height: 61px;
     padding-left: 16px;
     margin-bottom: 18px;
   }
@@ -83,8 +84,8 @@
     content: "";
     top: 2px;
     right: 2px;
-    width: 59px;
-    height: 55px;
+    width: 61px;
+    height: 57px;
     background-color: $border-lightgrey;
   }
 
@@ -106,15 +107,17 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0;
+    padding-top: 33px;
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 0;
   }
 
 
   .form__contacts .form__field {
     align-self: self-start;
     padding: 0;
+    margin-bottom: 0;
     width: 371px;
     box-sizing: border-box;
   }
@@ -123,8 +126,12 @@
     margin-left: auto;
   }
 
+  .form__contacts .form__field:nth-child(1) {
+    margin-bottom: 20px;
+  }
+
   .form__contacts .form__field-input {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
 
   .form__contacts .form__field-name {
