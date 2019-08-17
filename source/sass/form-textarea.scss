@@ -23,6 +23,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 1.67;
+  border: 2px solid $border-lightgrey;
   box-sizing: border-box;
 }
 
@@ -38,8 +39,6 @@
   .form__emotion-title {
     width: auto;
     padding: 0;
-    padding-left: 40px;
-    padding-right: 40px;
   }
 
   .form__emotion-text {

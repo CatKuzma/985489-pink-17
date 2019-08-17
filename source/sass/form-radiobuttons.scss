@@ -91,11 +91,36 @@
   .apps-wrapper {
     width: 100%;
     background-color: #ffffff;
+    padding-top: 20px;
+    //padding-bottom: 20px;
   }
 
   .form__apps {
     width: 100%;
     margin-left: 0;
+    padding-top: 43px;
+    padding-left: 60px;
+    border: 1px solid $border-lightgrey;
+    padding-bottom: 57px;
+    margin-bottom: 57px;
+  }
+
+  .form__apps-title {
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .form__apps .form__selection {
+    margin-bottom: 37px;
+    padding-left: 58px;
+    box-sizing: border-box;
+  }
+
+  .form__apps .form__selection:nth-child(4) {
+    margin-bottom: 0;
   }
 }
 
@@ -115,7 +140,6 @@
 
   .form__apps-title {
     padding-top: 0;
-    padding-bottom: 0;
     text-align: center;
   }
 }

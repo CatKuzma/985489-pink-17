@@ -42,6 +42,16 @@
   display: inline-block;
   vertical-align: top;
   width: 100%;
+  border: 2px solid $border-lightgrey;
+  box-sizing: border-box;
+}
+
+.form__field-input:hover {
+  border: 2px solid $font-color-darkgrey;
+}
+
+.form__field-input:focus {
+  border: 2px solid $font-color-red;
 }
 
 .doit-wrapper,
@@ -107,8 +117,9 @@
     width: $tablet-width;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
   }
 
@@ -136,8 +147,9 @@
     width: $tablet-width;
     padding-left: 60px;
     padding-right: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 68px;
     font-size: 18px;
+    line-height: 1.8;
   }
 
   .form__title .text-visible {
