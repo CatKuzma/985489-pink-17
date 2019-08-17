@@ -46,12 +46,15 @@
   box-sizing: border-box;
 }
 
-.form__field-input:hover {
+.form__field-input:hover,
+.form__emotion-text:hover {
   border: 2px solid $font-color-darkgrey;
 }
 
-.form__field-input:focus {
+.form__field-input:focus,
+.form__emotion-text:focus {
   border: 2px solid $font-color-red;
+  outline: none;
 }
 
 .doit-wrapper,
@@ -64,8 +67,8 @@
 //----------- Form - Button ---------
 
 .form-button {
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
 }
 
@@ -83,7 +86,7 @@
   text-align: center;
   color: $color-white;
   border: none;
-  background-color: #2aab6d;
+  background-color: $color-green;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -111,6 +114,14 @@
   color: $font-color-red;
 }
 
+.form__btn:hover {
+  background-color: $color-green-hover;
+}
+
+.form__btn:active {
+  color: $color-white-30;
+  background-color: $color-green-hover;
+}
 
 @media (min-width: $tablet-width) {
   .form {
@@ -165,9 +176,12 @@
     order: 6;
   }
 
-  .form__btn {
-    width: 296px;
-    min-height: 59px;
+  .form-button .form__btn {
+    width: 300px;
+    min-height: 63px;
+    margin: 0;
+    box-sizing: border-box;
+    margin-bottom: 45px;
   }
 
   .form-note {
