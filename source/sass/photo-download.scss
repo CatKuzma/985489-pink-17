@@ -6,13 +6,19 @@
 .download-photo__header {
   margin: 0;
   padding: 0;
+  padding-top: 20px;
+  padding-bottom: 42px;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 2.14;
+  text-align: center;
+  color: $font-color-darkgrey;
 }
 
 .form-wrapper {
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 45px;
   background-color: $bg-color-lightgrey;
   box-sizing: border-box;
 }
@@ -34,7 +40,7 @@
 .img-upload__form-file {
   width: 280px;
   height: 374px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .img-upload__form-settings {
@@ -44,36 +50,39 @@
 }
 
 .form-settings {
+  width: 200px;
+  margin-left: 35px;
   align-items: center;
+  margin-bottom: 75px;
 }
 
-.form-settings .setting__crop {
+.setting__crop {
   position: relative;
 }
 
-.setting-scales__crop {
+.level-crop {
+  position: absolute;
+  top: 85px;
+  left: -15px;
   width: 240px;
   height: 2px;
-  position: absolute;
   background-color: $font-color-darkgrey;
 }
 
-.setting-scales__crop::before,
-.setting-scales__fill::before,
-.setting-scales__contrast::before {
+.setting-level__pin {
   position: absolute;
   content: "";
   top: -8px;
   left: 70%;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border: 2px solid $bg-color-red;
   border-radius: 50%;
   background-color: $color-white;
 }
 
-.setting-scales__fill,
-.setting-scales__contrast {
+.level-fill,
+.level-contrast {
   display: none;
 }
 
@@ -113,7 +122,7 @@
 .post-btn {
   color: $bg-color-red;
   border: solid 3px $bg-color-red;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .cancel-btn {

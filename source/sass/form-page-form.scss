@@ -1,6 +1,7 @@
 .form {
   margin: 0 auto;
   padding-top: 45px;
+  padding-bottom: 15px;
 }
 
 .form__title {
@@ -197,7 +198,6 @@
     width: $desktop-width;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: yellow;
   }
 
   .form__title {
