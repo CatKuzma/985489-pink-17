@@ -60,25 +60,32 @@
   position: relative;
 }
 
-.level-crop {
-  position: absolute;
-  top: 85px;
-  left: -15px;
+.setting-level {
   width: 240px;
   height: 2px;
   background-color: $font-color-darkgrey;
 }
 
+.level-crop {
+  position: absolute;
+  top: 85px;
+  left: -15px;
+}
+
 .setting-level__pin {
   position: absolute;
   content: "";
-  top: -8px;
+  top: -7px;
   left: 70%;
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   border: 2px solid $bg-color-red;
   border-radius: 50%;
   background-color: $color-white;
+}
+
+.pin-crop--position {
+  left: 74%;
 }
 
 .level-fill,
@@ -131,10 +138,29 @@
 }
 
 @media (min-width: $tablet-width) {
+  .img-upload__form-settings {
+    margin-bottom: 0;
+  }
+
   .img-upload__form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .download-photo__header {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  .form-wrapper {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 55px;
+    background-color: $bg-color-lightgrey;
+    box-sizing: border-box;
   }
 
   .img-upload__form-file {
@@ -143,25 +169,60 @@
     margin-bottom: 0;
   }
 
+  .setting-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+    margin-left: 45px;
+    padding-top: 10px;
+  }
+
   .download-photo__image {
     width: 300px;
     height: 400px;
   }
 
   .form-settings {
+    padding: 0;
+    margin: 0;
+    width: 250px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+  }
+
+  .setting-level {
+    width: 200px;
+  }
+
+  .level-crop {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+  }
+
+
+  .level-fill,
+  .level-contrast {
+    position: relative;
+    display: inline-block;
   }
 
   .form-settings .icons-list__item {
+    display: flex;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
-    display: flex;
     width: 100%;
-    justify-content: space-between;
     align-items: center;
+  }
+
+  .form-settings .setting__crop {
+    margin-bottom: 47px;
+  }
+
+  .form-settings .setting__fill {
+    margin-bottom: 55px;
   }
 
   .setting-scales__crop {
@@ -176,6 +237,14 @@
     height: 2px;
     display: block;
     background-color: $font-color-darkgrey;
+  }
+
+  .pin-fill--position {
+    left: 13%;
+  }
+
+  .pin-contrast--position {
+    left: 48%;
   }
 
   .icon-crop {
@@ -198,8 +267,122 @@
   .icon-contrast path {
     fill: $bg-color-red;
   }
+
+  .download-photo__buttons {
+    margin-top: auto;
+  }
+
+  .post-btn {
+    margin-bottom: 25px;
+  }
 }
 
-//@media (min-width: $desktop-width) {
-//
-//}
+@media (min-width: $desktop-width) {
+  .download-photo {
+    width: 100%;
+    background-color: $color-white;
+  }
+
+  .download-photo__header {
+    padding-top: 0;
+    padding-bottom: 5px;
+    line-height: 1.8;
+  }
+
+  .form-wrapper {
+    padding-bottom: 25px;
+    background-color: $color-white;
+  }
+
+  .img-upload__form {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 57px;
+    padding-left: 80px;
+    padding-bottom: 55px;
+    box-sizing: border-box;
+    background-color: $bg-color-lightgrey;
+  }
+
+  .icon-crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .icon-fill {
+    width: 48px;
+    height: 43px;
+    fill: $bg-color-red;
+  }
+
+  .icon-contrast {
+    width: 32px;
+    height: 32px;
+    margin-left: 3px;
+  }
+
+  .setting-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 410px;
+    margin-left: 88px;
+    margin-top: -3px;
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+
+  .form-settings {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-settings .icons-list__item {
+    display: flex;
+    justify-content: space-between;
+    width: 382px;
+  }
+
+  .setting-level {
+    width: 290px;
+  }
+
+  .form-settings .setting__crop {
+    margin-bottom: 30px;
+  }
+
+  .form-settings .setting__fill {
+    margin-bottom: 30px;
+  }
+
+  .pin-crop--position {
+    left: 25%;
+  }
+
+  .pin-fill--position {
+    left: 86%;
+  }
+
+  .pin-contrast--position {
+    left: 55%;
+  }
+
+  .download-photo__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    margin-top: auto;
+  }
+
+  .post-btn {
+    width: 180px;
+    margin-bottom: 0;
+  }
+
+  .cancel-btn {
+    width: 180px;
+    margin-bottom: 0;
+  }
+}

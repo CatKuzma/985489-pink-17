@@ -1,3 +1,4 @@
+
 .form {
   margin: 0 auto;
   padding-top: 45px;
@@ -133,6 +134,7 @@
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
+    padding-bottom: 53px;
   }
 
   .form__name {
@@ -182,12 +184,14 @@
     min-height: 63px;
     margin: 0;
     box-sizing: border-box;
-    margin-bottom: 45px;
+    margin-bottom: 0;
   }
 
   .form-note {
+    display: inline-block;
+    vertical-align: top;
     width: auto;
-    margin-left: 0;
+    margin-left: auto;
     margin-right: 0;
   }
 }
@@ -198,6 +202,7 @@
     width: $desktop-width;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 0;
   }
 
   .form__title {
@@ -229,3 +234,4 @@
     display: block;
   }
 }
+

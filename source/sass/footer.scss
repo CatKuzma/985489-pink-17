@@ -95,7 +95,7 @@
   .footer {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 35px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 12px;
@@ -105,7 +105,7 @@
 
   .social {
     padding-top: 5px;
-    margin-left: -10px;
+    margin-left: -15px;
     width: 176px;
     margin-bottom: 0;
   }
@@ -119,10 +119,10 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding-top: 25px;
+    padding-top: 70px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 45px;
   }
 
   .footer-logo {
