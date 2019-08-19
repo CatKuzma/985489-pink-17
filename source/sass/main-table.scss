@@ -119,13 +119,9 @@
   width: auto;
 }
 
-//.prices-table__row-header:nth-child(3) {
-//  border-left: 2px solid $table-border;
-//  border-right: 2px solid $table-border;
-//}
 
 .row-name,
-.row-name__mobile {
+.row-name__small {
   padding-left: 22px;
   font-size: 14px;
   color: #283645;
@@ -235,7 +231,7 @@
     font-size: 16px;
   }
 
-  .row-name__mobile {
+  .row-name__small {
     display: none;
   }
 
@@ -261,10 +257,6 @@
   .prices-table__row-cell {
     height: 59px;
   }
-
-  //.cell-mobile {
-  //  height: 57px;
-  //}
 
   .prices-table__row-header:nth-child(3)::before {
     position: absolute;

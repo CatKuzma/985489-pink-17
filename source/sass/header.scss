@@ -8,11 +8,11 @@
 }
 
 
-.header-logo:hover svg path {
+.header-logo__link:hover svg path {
   fill: red;
 }
 
-.header-logo:active svg path {
+.header-logo__link:active svg path {
   fill: $color-white;
   opacity: 0.3;
 }
@@ -35,8 +35,8 @@
   background-color: $bg-color-darkblue;
 }
 
-.header-logo__tablet-show,
-.header-logo__desktop-show {
+.header-logo__two-show,
+.header-logo__three-show {
   display: none;
 }
 
@@ -59,13 +59,13 @@
     background-color: transparent;
   }
 
-  .header-logo__tablet-show {
+  .header-logo__two-show {
     display: block;
   }
 
 
-  .header-logo__mobile-show,
-  .header-logo__desktop-show {
+  .header-logo__one-show,
+  .header-logo__three-show {
     display: none;
   }
 }
@@ -101,12 +101,12 @@
     box-sizing: border-box;
   }
 
-  .header-logo__mobile-show,
-  .header-logo__tablet-show {
+  .header-logo__one-show,
+  .header-logo__two-show {
     display: none;
   }
 
-  .header-logo__desktop-show {
+  .header-logo__three-show {
     width: 147px;
     height: 40px;
     display: block;

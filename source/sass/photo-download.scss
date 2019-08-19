@@ -24,10 +24,21 @@
 }
 
 .img-upload__form {
+  position: relative;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+}
+
+.img-upload__form::before {
+  position: absolute;
+  content: "";
+  width: 319px;
+  height: 1px;
+  top: 535px;
+  left: 0;
+  background-color: $border-lightgrey;
 }
 
 .img-upload__form-file,
@@ -90,7 +101,7 @@
 }
 
 .pin-crop--position {
-  left: 74%;
+  left: 79%;
 }
 
 .level-fill,
@@ -100,6 +111,7 @@
 
 .download-photo__buttons {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .icon-crop {
@@ -144,12 +156,36 @@
   margin-bottom: 10px;
 }
 
+.post-btn:hover {
+  color: $color-white;
+  background-color: $bg-color-red;
+}
+
+.post-btn:active {
+  color: $color-white-30;
+  background-color: $bg-color-red;
+}
+
 .cancel-btn {
   color: $border-lightgrey;
   border: solid 3px $border-lightgrey;
 }
 
+.cancel-btn:hover {
+  color: $icon-hover-darkgrey;
+  border: 3px solid $icon-hover-darkgrey;
+}
+
+.cancel-btn:active {
+  color: $color-white-30;
+  background-color: $icon-hover-darkgrey;
+}
+
 @media (min-width: $tablet-width) {
+  .img-upload__form::before {
+    display: none;
+  }
+
   .img-upload__form-settings {
     margin-bottom: 0;
   }
@@ -197,7 +233,7 @@
   .form-settings {
     padding: 0;
     margin: 0;
-    width: 250px;
+    width: 275px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -226,16 +262,24 @@
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    padding-left: 5px;
+    padding-right: 23px;
+    padding-bottom: 20px;
     width: 100%;
     align-items: center;
+    border-bottom: 1px solid $border-lightgrey;
   }
 
   .form-settings .setting__crop {
-    margin-bottom: 47px;
+    margin-bottom: 27px;
   }
 
   .form-settings .setting__fill {
-    margin-bottom: 55px;
+    margin-bottom: 28px;
+  }
+
+  .form-settings .setting__contrast {
+    padding-bottom: 28px;
   }
 
   .setting-scales__crop {
@@ -288,6 +332,8 @@
 
   .download-photo__buttons {
     margin-top: auto;
+    padding-top: 0;
+    border-top: none;
   }
 
   .post-btn {
@@ -352,7 +398,7 @@
   .form-settings {
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 410px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -360,20 +406,31 @@
   .form-settings .icons-list__item {
     display: flex;
     justify-content: space-between;
-    width: 382px;
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 23px;
+    padding-bottom: 15px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .form-settings .setting__crop {
+    margin-bottom: 12px;
+  }
+
+  .form-settings .setting__fill {
+    margin-bottom: 18px;
+  }
+
+  .form-settings .setting__contrast {
+    padding-bottom: 18px;
   }
 
   .setting-level {
     width: 290px;
   }
 
-  .form-settings .setting__crop {
-    margin-bottom: 30px;
-  }
-
-  .form-settings .setting__fill {
-    margin-bottom: 30px;
-  }
 
   .pin-crop--position {
     left: 25%;
