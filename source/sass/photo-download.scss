@@ -82,6 +82,11 @@
   border: 2px solid $bg-color-red;
   border-radius: 50%;
   background-color: $color-white;
+  cursor: pointer;
+}
+
+.setting-level__pin:active {
+  background-color: $bg-color-red;
 }
 
 .pin-crop--position {
@@ -99,11 +104,18 @@
 
 .icon-crop {
   fill: $bg-color-red;
+  cursor: pointer;
 }
 
 .icon-fill,
 .icon-contrast path {
   fill: $border-lightgrey;
+  cursor: pointer;
+}
+
+.icon-fill:hover,
+.icon-contrast:hover path {
+  fill: $icon-hover-darkgrey;
 }
 
 .download-photo__btn {
@@ -206,6 +218,7 @@
   .level-contrast {
     position: relative;
     display: inline-block;
+    cursor: pointer;
   }
 
   .form-settings .icons-list__item {
@@ -265,6 +278,11 @@
   }
 
   .icon-contrast path {
+    fill: $bg-color-red;
+  }
+
+  .icon-fill:hover,
+  .icon-contrast:hover path {
     fill: $bg-color-red;
   }
 
