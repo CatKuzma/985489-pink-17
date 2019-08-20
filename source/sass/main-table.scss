@@ -129,16 +129,16 @@
   text-transform: uppercase;
 }
 
-.bg-no {
+.cell--bg-no {
   background-image: url("../img/icon-no.svg");
 }
 
-.bg-yes {
+.cell--bg-yes {
   background-image: url("../img/icon-yes.svg");
 }
 
-.bg-no,
-.bg-yes {
+.cell--bg-no,
+.cell--bg-yes {
   background-repeat: no-repeat;
   background-position: 230px center;
 }
@@ -235,8 +235,8 @@
     display: none;
   }
 
-  .bg-no,
-  .bg-yes {
+  .cell--bg-no,
+  .cell--bg-yes {
     background-position: center center;
   }
 }
