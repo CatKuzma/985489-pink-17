@@ -1,6 +1,8 @@
+
 .form {
   margin: 0 auto;
   padding-top: 45px;
+  padding-bottom: 15px;
 }
 
 .form__title {
@@ -16,6 +18,7 @@
   color: $font-color-darkgrey;
   box-sizing: border-box;
 }
+
 
 .text-visible {
   display: none;
@@ -41,6 +44,19 @@
   display: inline-block;
   vertical-align: top;
   width: 100%;
+  border: 2px solid $border-lightgrey;
+  box-sizing: border-box;
+}
+
+.form__field-input:hover,
+.form__emotion-text:hover {
+  border: 2px solid $font-color-darkgrey;
+}
+
+.form__field-input:focus,
+.form__emotion-text:focus {
+  border: 2px solid $font-color-red;
+  outline: none;
 }
 
 .doit-wrapper,
@@ -53,8 +69,9 @@
 //----------- Form - Button ---------
 
 .form-button {
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 .form__btn {
@@ -71,8 +88,15 @@
   text-align: center;
   color: $color-white;
   border: none;
-  background-color: #2aab6d;
+  background-color: $color-green;
   cursor: pointer;
+  box-sizing: border-box;
+}
+
+.form__btn--modifier {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 37px;
 }
 
 .form-note {
@@ -92,15 +116,25 @@
   color: $font-color-red;
 }
 
+.form__btn:hover {
+  background-color: $color-green-hover;
+}
+
+.form__btn:active {
+  color: $color-white-30;
+  background-color: $color-green-hover;
+}
 
 @media (min-width: $tablet-width) {
   .form {
     width: $tablet-width;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
+    padding-bottom: 53px;
   }
 
   .form__name {
@@ -127,8 +161,9 @@
     width: $tablet-width;
     padding-left: 60px;
     padding-right: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 68px;
     font-size: 18px;
+    line-height: 1.8;
   }
 
   .form__title .text-visible {
@@ -138,29 +173,36 @@
   .form-button {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-left: 0;
     padding-right: 0;
     order: 6;
   }
 
-  .form__btn {
-    width: 296px;
-    min-height: 59px;
+  .form-button .form__btn {
+    width: 300px;
+    min-height: 63px;
+    margin: 0;
+    box-sizing: border-box;
+    margin-bottom: 0;
   }
 
   .form-note {
+    display: inline-block;
+    vertical-align: top;
     width: auto;
-    margin-left: 0;
+    margin-left: auto;
     margin-right: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form {
+    justify-content: space-between;
     width: $desktop-width;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 0;
   }
 
   .form__title {
@@ -172,6 +214,16 @@
   .flexbox-container {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .form__name {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .form-button {
+    justify-content: space-between;
   }
 
   .form-note {

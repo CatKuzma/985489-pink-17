@@ -1,17 +1,35 @@
+
 .footer {
   padding-top: 40px;
   padding-left: 70px;
   padding-right: 70px;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .footer-logo {
   text-align: center;
-  margin-bottom: 43px;
+  margin-bottom: 35px;
+}
+
+.big-image--show {
+  display: none;
+}
+
+.footer-logo:hover .logo-text--color {
+  fill: $font-color-red;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
+}
+
+.footer-logo:active .logo-text--color {
+  fill: $bg-color-darkblue;
 }
 
 .social {
-  margin-bottom: 41px;
+  margin-bottom: 31px;
 }
 
 .social-button {
@@ -26,6 +44,14 @@
   box-sizing: border-box;
 }
 
+.social-button:hover {
+  border: solid 3px $font-color-darkgrey;
+}
+
+.social-button:active {
+  opacity: 0.1;
+}
+
 .social-button__image g,
 .social-button__image path,
 .footer__produce-icon path {
@@ -33,48 +59,100 @@
 }
 
 .footer__produce {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
   vertical-align: top;
-  min-width: 30px;
-  height: 34px;
-  margin-bottom: 40px;
+  width: 136px;
+  height: 51px;
 }
 
 .footer__produce-text {
   line-height: 34px;
   vertical-align: top;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer__produce-icon {
+  width: 40px;
+  height: 51px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__produce:hover .footer__produce-icon path {
+  fill: $font-color-darkgrey;
+}
+
+.footer__produce:active .footer__produce-icon {
+  fill: $font-color-darkgrey;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .footer {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 35px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 12px;
+    box-sizing: border-box;
   }
+
 
   .social {
-    width: 180px;
-  }
-
-  .footer__produce {
-    display: flex;
-    justify-content: space-between;
-    min-width: 150px;
-    min-height: 50px;
+    padding-top: 5px;
+    margin-left: -15px;
+    width: 176px;
     margin-bottom: 0;
   }
 
-  .footer__produce-icon {
-    width: 27px;
-    height: 34px;
+  .footer__produce {
+    padding-top: 8px;
+    margin: 0;
+    margin-right: -6px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer {
+    padding-top: 70px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 45px;
+  }
+
+  .footer-logo {
+    margin-right: 20px;
+  }
+
+  .small-image--show {
+    display: none;
+  }
+
+  .big-image--show {
+    display: block;
+  }
+
+  .social {
+    padding-top: 10px;
+    margin-left: -7px;
+    width: 176px;
+  }
+
+  .footer__produce {
+    padding-top: 4px;
+    width: 160px;
+  }
+
+  .footer__produce-text {
+    font-size: 18px;
+  }
+
+  .footer__produce-icon {
+    padding-top: 8px;
   }
 }

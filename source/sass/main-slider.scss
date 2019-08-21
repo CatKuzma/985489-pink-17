@@ -51,9 +51,19 @@
   width: 6px;
   height: 6px;
   opacity: 0.3;
-  background-color: #283645;
+  background-color: $font-color-darkgrey;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-toggle:hover {
+  opacity: 0.6;
+  background-color: $font-color-darkgrey;
+}
+
+.slider-toggle:active {
+  opacity: 0.1;
+  background-color: $font-color-darkgrey;
 }
 
 .btn-01:checked ~ .toggles .slider-toggle[for="btn-01"] {
@@ -149,7 +159,7 @@
 
 @media (min-width: $desktop-width) {
   .slider {
-    padding-bottom: 33px;
+    padding-bottom: 17px;
   }
 
   .slider-wrapper {
