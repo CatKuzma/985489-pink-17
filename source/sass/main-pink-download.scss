@@ -27,6 +27,16 @@
   border-radius: 55px;
 }
 
+.pink-app__btn:hover {
+  color: $bg-color-red;
+  background: $color-white;
+}
+
+.pink-app__btn:active {
+  color: rgba(210, 40, 86, 0.3);
+  background: $color-white;
+}
+
 .download__icons {
   width: 205px;
   height: 57px;

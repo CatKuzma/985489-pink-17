@@ -30,6 +30,16 @@
   font-weight: 700;
 }
 
+.main-navigation__item-link:hover {
+  color: $bg-color-red;
+}
+
+
+.main-navigation__item-link:active {
+  color: $color-white;
+  opacity: 0.3;
+}
+
 @media (min-width: $desktop-width) {
   .main-navigation {
     margin-right: 10px;
@@ -62,5 +72,14 @@
 
   .navigation-link--active {
     border-bottom: 2px solid $color-white;
+  }
+
+  .navigation-link--active:hover {
+    border-bottom: 2px solid $bg-color-red;
+  }
+
+  .navigation-link--active:active {
+    border-bottom: 2px solid $color-white;
+    opacity: 0.3;
   }
 }

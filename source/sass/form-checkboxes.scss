@@ -5,6 +5,7 @@
   padding: 0;
   padding-left: 22px;
   padding-right: 22px;
+  padding-bottom: 40px;
   border: none;
   box-sizing: border-box;
 }
@@ -12,8 +13,8 @@
 .form__progress-title {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 41px;
-  padding-bottom: 50px;
+  padding-top: 36px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -23,11 +24,16 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding-left: 75px;
+  padding-left: 66px;
   min-height: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 48px;
   cursor: pointer;
   box-sizing: border-box;
+}
+
+.form__progress:nth-child(6) {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .form__progress-name::before {
@@ -35,8 +41,8 @@
   content: "";
   top: 0;
   left: 0;
-  width: 35px;
-  height: 35px;
+  width: 39px;
+  height: 39px;
   border: solid 2px #e5e5e5;
   background-color: #ffffff;
   border-radius: 4px;
@@ -47,11 +53,11 @@
 .form__progress-name::after {
   position: absolute;
   content: "";
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
   top: 0;
   left: 0;
-  background: url("../img/icon-yes-red.svg") center center no-repeat;
+  background: url("../img/icon-yes-red.svg") 8px 12px no-repeat;
   z-index: 1000;
 }
 
@@ -97,7 +103,7 @@
     width: 100%;
     background-color: #ffffff;
     box-sizing: border-box;
-    margin-bottom: 30px;
+    margin-bottom: 57px;
   }
 
   .form__doit {
@@ -105,10 +111,10 @@
     padding: 0;
     padding-left: 60px;
     padding-right: 0;
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 42px;
+    padding-bottom: 51px;
     width: 100%;
-    border: 1px solid black;
+    border: 2px solid $border-lightgrey;
     box-sizing: border-box;
   }
 
@@ -116,43 +122,64 @@
     width: auto;
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .form__progress {
     width: 100%;
-    padding-left: 75px;
+    padding-left: 58px;
+    margin-bottom: 47px;
+  }
+
+  .form__progress:nth-child(6) {
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .form__doit {
+    padding-top: 46px;
+    padding-bottom: 10px;
+  }
+
   .form__progress {
     width: 33%;
-    padding-left: 75px;
+    padding-left: 60px;
   }
 
   .form__progress:nth-child(1) {
     order: 1;
+    width: 260px;
+    margin-right: 50px;
   }
 
   .form__progress:nth-child(2) {
+    width: 260px;
     order: 4;
+    margin-right: 50px;
   }
 
   .form__progress:nth-child(3) {
     order: 2;
+    width: 250px;
+    margin-right: 46px;
   }
 
   .form__progress:nth-child(4) {
     order: 5;
+    margin-right: 46px;
+    width: 250px;
   }
 
   .form__progress:nth-child(5) {
     order: 3;
+    width: 220px;
   }
 
   .form__progress:nth-child(6) {
     order: 6;
+    width: 220px;
+    height: 40px;
   }
 }

@@ -1,43 +1,117 @@
 .download-photo {
-  background-color: $bg-color-lightgrey;
+  width: 100%;
+  background-color: $color-white;
 }
 
 .download-photo__header {
-  display: block;
-  width: 100%;
   margin: 0;
-  padding-bottom: 30px;
-  padding-top: 50px;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 42px;
   font-size: 14px;
-  line-height: 30px;
   font-weight: 400;
+  line-height: 2.14;
   text-align: center;
+  color: $font-color-darkgrey;
+}
+
+.form-wrapper {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 45px;
+  background-color: $bg-color-lightgrey;
   box-sizing: border-box;
 }
 
-.download-photo__image {
-  width: 280px;
-  height: 374px;
-  vertical-align: bottom;
-}
-
-.download-wrapper {
+.img-upload__form {
+  position: relative;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
 }
 
-.download-photo__container {
+.img-upload__form::before {
+  position: absolute;
+  content: "";
+  width: 319px;
+  height: 1px;
+  top: 535px;
+  left: 0;
+  background-color: $border-lightgrey;
+}
+
+.img-upload__form-file,
+.img-upload__form-settings {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.img-upload__form-file {
+  width: 280px;
+  height: 374px;
+  margin-bottom: 40px;
+}
+
+.img-upload__form-settings {
+  width: 280px;
+  box-sizing: border-box;
   margin-bottom: 30px;
 }
 
-.setting {
-  display: flex;
+.form-settings {
+  width: 200px;
+  margin-left: 35px;
   align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 75px;
+}
+
+.setting__crop {
+  position: relative;
+}
+
+.setting-level {
+  width: 240px;
+  height: 2px;
+  background-color: $font-color-darkgrey;
+}
+
+.level-crop {
+  position: absolute;
+  top: 85px;
+  left: -15px;
+}
+
+.setting-level__pin {
+  position: absolute;
+  content: "";
+  top: -7px;
+  left: 70%;
+  width: 11px;
+  height: 11px;
+  border: 2px solid $bg-color-red;
+  border-radius: 50%;
+  background-color: $color-white;
+  cursor: pointer;
+}
+
+.setting-level__pin:active {
+  background-color: $bg-color-red;
+}
+
+.pin-crop--position {
+  left: 79%;
+}
+
+.level-fill,
+.level-contrast {
+  display: none;
+}
+
+.download-photo__buttons {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .icon-crop {
@@ -47,89 +121,108 @@
 
 .icon-fill,
 .icon-contrast path {
-  fill: #b5b9be;
+  fill: $border-lightgrey;
   cursor: pointer;
 }
 
-.setting-scales {
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-.setting-scales__crop,
-.setting-scales__fill,
-.setting-scales__contrast {
-  position: relative;
-  width: 240px;
-  height: 2px;
-  margin: 0 auto;
-  background-color: #6b757f;
-}
-
-.setting-scales__crop::before,
-.setting-scales__fill::before,
-.setting-scales__contrast::before {
-  position: absolute;
-  content: "";
-  width: 14px;
-  height: 14px;
-  top: -8px;
-  left: 70%;
-  border: solid 2px $bg-color-red;
-  border-radius: 50%;
-  background-color: $color-white;
-}
-
-.setting-scales__fill,
-.setting-scales__contrast {
-  display: none;
-}
-
-
-.download-photo__buttons {
-  margin-top: auto;
+.icon-fill:hover,
+.icon-contrast:hover path {
+  fill: $icon-hover-darkgrey;
 }
 
 .download-photo__btn {
+  width: 100%;
   display: inline-block;
   vertical-align: top;
-  width: 100%;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 9px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  line-height: 24px;
+  box-sizing: border-box;
+  cursor: pointer;
   min-height: 55px;
   background: none;
   border-radius: 55px;
-  box-sizing: border-box;
-  cursor: pointer;
 }
 
 .post-btn {
-  border: 3px solid $bg-color-red;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
   color: $bg-color-red;
-  margin-bottom: 20px;
-  box-sizing: border-box;
+  border: solid 3px $bg-color-red;
+  margin-bottom: 10px;
+}
+
+.post-btn:hover {
+  color: $color-white;
+  background-color: $bg-color-red;
+}
+
+.post-btn:active {
+  color: $color-white-30;
+  background-color: $bg-color-red;
 }
 
 .cancel-btn {
-  border: 3px solid $border-lightgrey;
-  //line-height: 1;
-  text-align: center;
   color: $border-lightgrey;
+  border: solid 3px $border-lightgrey;
+}
+
+.cancel-btn:hover {
+  color: $icon-hover-darkgrey;
+  border: 3px solid $icon-hover-darkgrey;
+}
+
+.cancel-btn:active {
+  color: $color-white-30;
+  background-color: $icon-hover-darkgrey;
 }
 
 @media (min-width: $tablet-width) {
-  .download-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 40px;
+  .img-upload__form::before {
+    display: none;
   }
 
-  .download-photo__container {
+  .img-upload__form-settings {
+    margin-bottom: 0;
+  }
+
+  .img-upload__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .download-photo__header {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  .form-wrapper {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 55px;
+    background-color: $bg-color-lightgrey;
+    box-sizing: border-box;
+  }
+
+  .img-upload__form-file {
     width: 300px;
     height: 400px;
     margin-bottom: 0;
+  }
+
+  .setting-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+    margin-left: 45px;
+    padding-top: 10px;
   }
 
   .download-photo__image {
@@ -137,28 +230,78 @@
     height: 400px;
   }
 
-  .download-photo__setting {
-    width: 260px;
+  .form-settings {
+    padding: 0;
+    margin: 0;
+    width: 275px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
   }
 
-  .setting {
-    width: 24px;
-    flex-wrap: wrap;
-    align-self: flex-start;
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 0;
+  .setting-level {
+    width: 200px;
   }
 
-  .setting__crop {
-    margin-bottom: 50px;
+  .level-crop {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
   }
 
-  .setting__fill {
-    margin-bottom: 50px;
+
+  .level-fill,
+  .level-contrast {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .form-settings .icons-list__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 23px;
+    padding-bottom: 20px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid $border-lightgrey;
+  }
+
+  .form-settings .setting__crop {
+    margin-bottom: 27px;
+  }
+
+  .form-settings .setting__fill {
+    margin-bottom: 28px;
+  }
+
+  .form-settings .setting__contrast {
+    padding-bottom: 28px;
+  }
+
+  .setting-scales__crop {
+    position: relative;
+    width: 200px;
+  }
+
+  .setting-scales__fill,
+  .setting-scales__contrast {
+    position: relative;
+    width: 200px;
+    height: 2px;
+    display: block;
+    background-color: $font-color-darkgrey;
+  }
+
+  .pin-fill--position {
+    left: 13%;
+  }
+
+  .pin-contrast--position {
+    left: 48%;
   }
 
   .icon-crop {
@@ -175,95 +318,54 @@
   .icon-contrast {
     width: 16px;
     height: 16px;
+    margin-left: 3px;
   }
 
   .icon-contrast path {
     fill: $bg-color-red;
   }
 
-  .setting-scales {
-    width: 202px;
-    padding-top: 10px;
-    margin-bottom: 30px;
-    margin-left: auto;
-  }
-
-  .setting-scales__crop,
-  .setting-scales__fill,
-  .setting-scales__contrast {
-    display: block;
-    width: 202px;
-    margin-top: 75px;
-  }
-
-  .setting-scales__crop {
-    margin-top: 0;
+  .icon-fill:hover,
+  .icon-contrast:hover path {
+    fill: $bg-color-red;
   }
 
   .download-photo__buttons {
-    width: 260px;
     margin-top: auto;
-  }
-
-  .download-photo__btn {
-    width: 260px;
-    min-height: 55px;
     padding-top: 0;
-    padding-bottom: 0;
-    box-sizing: border-box;
+    border-top: none;
   }
 
-  .post-btn,
-  .cancel-btn {
-    margin-bottom: 20px;
+  .post-btn {
+    margin-bottom: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .download-photo {
+    width: 100%;
     background-color: $color-white;
   }
 
+  .download-photo__header {
+    padding-top: 0;
+    padding-bottom: 5px;
+    line-height: 1.8;
+  }
 
-  .download-wrapper {
-    padding-top: 80px;
-    padding-right: 80px;
+  .form-wrapper {
+    padding-bottom: 25px;
+    background-color: $color-white;
+  }
+
+  .img-upload__form {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 57px;
     padding-left: 80px;
-    padding-bottom: 40px;
+    padding-bottom: 55px;
     box-sizing: border-box;
     background-color: $bg-color-lightgrey;
-  }
-
-  .download-photo__header {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.67;
-    padding-bottom: 30px;
-    padding-top: 50px;
-  }
-
-  .download-photo__setting {
-    width: 410px;
-  }
-
-  .setting-scales {
-    width: 288px;
-    padding-top: 20px;
-  }
-
-  .setting-scales__crop,
-  .setting-scales__fill,
-  .setting-scales__contrast {
-    width: 100%;
-    margin-top: 95px;
-  }
-
-  .setting-scales__crop {
-    margin-top: 0;
-  }
-
-  .setting {
-    width: 48px;
   }
 
   .icon-crop {
@@ -277,27 +379,85 @@
     fill: $bg-color-red;
   }
 
-  .setting__contrast {
-    margin: 0 auto;
-  }
-
   .icon-contrast {
     width: 32px;
     height: 32px;
+    margin-left: 3px;
+  }
+
+  .setting-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 410px;
+    margin-left: 88px;
+    margin-top: -3px;
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+
+  .form-settings {
+    padding: 0;
+    margin: 0;
+    width: 410px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-settings .icons-list__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 23px;
+    padding-bottom: 15px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .form-settings .setting__crop {
+    margin-bottom: 12px;
+  }
+
+  .form-settings .setting__fill {
+    margin-bottom: 18px;
+  }
+
+  .form-settings .setting__contrast {
+    padding-bottom: 18px;
+  }
+
+  .setting-level {
+    width: 290px;
+  }
+
+
+  .pin-crop--position {
+    left: 25%;
+  }
+
+  .pin-fill--position {
+    left: 86%;
+  }
+
+  .pin-contrast--position {
+    left: 55%;
   }
 
   .download-photo__buttons {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    width: 410px;
+    margin-top: auto;
   }
 
-  .download-photo__btn {
-    width: 184px;
+  .post-btn {
+    width: 180px;
+    margin-bottom: 0;
   }
 
-  .post-btn,
   .cancel-btn {
-    margin-bottom: 1px;
+    width: 180px;
+    margin-bottom: 0;
   }
 }
